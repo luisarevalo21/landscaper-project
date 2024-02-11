@@ -6,15 +6,7 @@ import heroImage1 from "../assets/hero_image_1.jpg";
 import heroImage2 from "../assets/hero_image_2.jpg";
 import heroImage3 from "../assets/hero_image_3.jpg";
 import Image from "react-bootstrap/Image";
-// import heroImage2 from "../assets/hero-image-2.jpg";
-// import heroImage3 from "../assets/hero-image-3.jpg";
 
-//todo
-//add the carousel wtih image s
-//and text overlaying it
-//add the button click to menu
-//aniamtion to show the menu items
-//push basis to git
 const Hero = () => {
   return (
     <div className="hero">
@@ -53,29 +45,7 @@ const Hero = () => {
             </div>
           </Carousel.Caption>
         </Carousel.Item>
-        {/* Add more Carousel.Items for additional images */}
       </Carousel>
-
-      {/* <Carousel.Item>
-          <img className="d-block w-100" alt="slider image" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" alt="slider image" />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </Carousel.Caption>
-        </Carousel.Item> */}
-
-      {/* <div className="hero__main">
-        <div className="hero__main__title">
-          <h2>Zengarden</h2>
-          {/* <span className="material-symbols-outlined hero__main__menu">menu</span> */}
     </div>
   );
 };
