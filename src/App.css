@@ -1,0 +1,84 @@
+:root {
+  --dark-blue: #0056b3;
+  --light-blue: #3ea6ff;
+  --yellow: #ffc107;
+  --dark-gray: #343a40;
+  --light-gray: #7b8b8e;
+  --green: #87ba45;
+  --white: #ffffff;
+  --black: #242328;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+
+  background-color: var(--white);
+  color: var(--white);
+}
+
+/* header */
+.header {
+  background: var(--black);
+  /* min-height: 100px; */
+  padding: 1.5em 1em;
+}
+.header__main__title {
+  display: flex;
+  align-items: center;
+}
+.header__main__menu {
+  margin-left: auto;
+  margin-right: 0.5em;
+  font-size: 2rem;
+}
+
+/*hero */
+
+.hero {
+  min-height: 50vh;
+  width: 100%;
+  color: black;
+}
+.hero__subtext--uppercase {
+  text-transform: capitalize;
+}
+.hero__btn__container {
+  display: flex;
+
+  align-items: center;
+  margin-top: 1em;
+}
+.hero__btn {
+  background-color: var(--dark-blue);
+  color: var(--white);
+
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 0.5em;
+  text-transform: uppercase;
+}
+.hero__btn--green {
+  background: var(--green);
+}
+
+.hero__btn--clear {
+  border: 2px solid var(--white);
+  color: var(--white);
+  background: transparent;
+}
+.hero__image {
+  max-width: 100%;
+  background: black;
+  max-height: 100%;
+}
