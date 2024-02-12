@@ -24,6 +24,15 @@ html {
   color: var(--white);
 }
 
+@font-face {
+  font-family: 'PTSerif-Italic';
+  src: url('./assets/fonts/PTSerif-Italic.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
 /* header */
 .header {
   background: var(--black);
@@ -48,14 +57,27 @@ html {
 }
 
 /*hero */
-
 .hero {
   min-height: 50vh;
   width: 100%;
   color: black;
 }
-.hero__subtext--uppercase {
+.hero__caption__container {
+  top: 50%;
+  height: min-content;
+  transform: translate(0, -50%);
+}
+.hero__toptext--font {
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'PTSerif-Italic';
+  font-size: 1.2rem;
+}
+.hero__subtext--font {
   text-transform: capitalize;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 .hero__btn__container {
   display: flex;
@@ -78,7 +100,6 @@ html {
 .hero__btn--green {
   background: var(--green);
 }
-
 .hero__btn--clear {
   border: 2px solid var(--white);
   color: var(--white);
@@ -136,7 +157,6 @@ html {
 }
 
 /*card */
-
 .card {
   border: 1px dotted #ccc;
   background: #f7f8f9;
