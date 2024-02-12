@@ -28,11 +28,18 @@ html {
 .header {
   background: var(--black);
   /* min-height: 100px; */
-  padding: 1.5em 1em;
+  padding: 1.2em 1em;
 }
 .header__main__title {
   display: flex;
   align-items: center;
+}
+.header__company__name {
+  margin: 3px 0 0 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transform: scale(1, 95%);
 }
 .header__main__menu {
   margin-left: auto;
