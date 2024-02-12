@@ -81,18 +81,21 @@ html {
 }
 .hero__btn__container {
   display: grid;
-  grid-auto-flow: column;
+  gap: 15px;
+  justify-content: space-between;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 140px);
 }
 .hero__btn {
   background-color: var(--dark-blue);
   color: var(--white);
+  white-space: nowrap;
 
   padding: 0.5em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 0 0.5em;
   text-transform: uppercase;
 }
 .hero__btn--green {
