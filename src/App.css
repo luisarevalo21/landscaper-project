@@ -73,6 +73,10 @@ html {
   font-family: 'PTSerif-Italic';
   font-size: 1.2rem;
 }
+.hero__separator::before {
+  content: "- - - - - - - - - -";
+  font-size: 10px;
+}
 .hero__subtext--font {
   text-transform: capitalize;
   font-size: 2rem;
