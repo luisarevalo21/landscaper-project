@@ -121,6 +121,7 @@ html {
   max-width: 100%;
   background: black;
   max-height: 100%;
+  filter: brightness(50%);
 }
 
 .info {
