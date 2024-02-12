@@ -19,34 +19,34 @@ const Hero = () => {
               Complete Care for All your landscape needs
             </p>
             <div className="hero__btn__container">
-              <button className="hero__btn hero__btn--green">Get in Touch</button>
-              <button className="hero__btn hero__btn--clear ">Learn More</button>
+              <button className="hero__btn hero__btn--green hero__btn--font hero__btn--padding">Get in Touch</button>
+              <button className="hero__btn hero__btn--clear hero__btn--font hero__btn--padding">Learn More</button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <Image src={heroImage2} className="hero__image" alt="slider image" />
           <Carousel.Caption className="text-center hero__caption__container">
-            <h3 className="hero__toptext hero__toptext--font">We can help to create the garden of your dreams</h3>
-            <p className="hero__subtext hero__subtext--font">
+            <h3 className="hero__toptext hero__toptext--font hero__btn--padding">We can help to create the garden of your dreams</h3>
+            <p className="hero__subtext hero__subtext--font hero__btn--padding">
               Easy to set up, Easy to Fill and Easy to Grow
             </p>
             <div className="hero__btn__container">
-              <button className="hero__btn hero__btn--green">Get in Touch</button>
-              <button className="hero__btn hero__btn--clear ">Learn More</button>
+              <button className="hero__btn hero__btn--green hero__btn--font hero__btn--padding">Get in Touch</button>
+              <button className="hero__btn hero__btn--clear hero__btn--font hero__btn--padding">Learn More</button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <Image src={heroImage3} className="hero__image" alt="slider image" />
           <Carousel.Caption className="text-center hero__caption__container">
-            <h3 className="hero__toptext hero__toptext--font">Second slide label</h3>
-            <p className="hero__subtext hero__subtext--font">
+            <h3 className="hero__toptext hero__toptext--font hero__btn--padding">Second slide label</h3>
+            <p className="hero__subtext hero__subtext--font hero__btn--padding">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div className="hero__btn__container">
-              <button className="hero__btn hero__btn--green">Get in Touch</button>
-              <button className="hero__btn hero__btn--clear ">Learn More</button>
+              <button className="hero__btn hero__btn--green hero__btn--font hero__btn--padding">Get in Touch</button>
+              <button className="hero__btn hero__btn--clear hero__btn--font hero__btn--padding">Learn More</button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>

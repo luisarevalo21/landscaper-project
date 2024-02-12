@@ -80,10 +80,8 @@ html {
   font-weight: bold;
 }
 .hero__btn__container {
-  display: flex;
-
-  align-items: center;
-  margin-top: 1em;
+  display: grid;
+  grid-auto-flow: column;
 }
 .hero__btn {
   background-color: var(--dark-blue);
@@ -104,6 +102,17 @@ html {
   border: 2px solid var(--white);
   color: var(--white);
   background: transparent;
+}
+.hero__btn--clear:active {
+  background: var(--white);
+  color: var(--green);
+}
+.hero__btn--padding {
+  padding: 10px 15px;
+}
+.hero__btn--font {
+  font-weight: bold;
+  font-size: 14px;
 }
 .hero__image {
   max-width: 100%;
