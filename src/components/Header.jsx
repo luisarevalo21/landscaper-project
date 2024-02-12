@@ -24,7 +24,7 @@ const Header = () => {
       </div>
       <div className="header__main">
         <div className="header__main__title">
-          <h2>Zengarden</h2>
+          <h2 className="header__company__name">Zengarden</h2>
           <span className="material-symbols-outlined header__main__menu">menu</span>
           {/* <nav className="header__main__links">
             <ul>

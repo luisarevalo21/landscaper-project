@@ -24,15 +24,31 @@ html {
   color: var(--white);
 }
 
+@font-face {
+  font-family: 'PTSerif-Italic';
+  src: url('./assets/fonts/PTSerif-Italic.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
 /* header */
 .header {
   background: var(--black);
   /* min-height: 100px; */
-  padding: 1.5em 1em;
+  padding: 1.2em 1em;
 }
 .header__main__title {
   display: flex;
   align-items: center;
+}
+.header__company__name {
+  margin: 3px 0 0 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transform: scale(1, 95%);
 }
 .header__main__menu {
   margin-left: auto;
@@ -41,46 +57,75 @@ html {
 }
 
 /*hero */
-
 .hero {
   min-height: 50vh;
   width: 100%;
   color: black;
 }
-.hero__subtext--uppercase {
+.hero__caption__container {
+  top: 50%;
+  height: min-content;
+  transform: translate(0, -50%);
+}
+.hero__toptext--font {
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'PTSerif-Italic';
+  font-size: 1.2rem;
+}
+.hero__separator::before {
+  content: "- - - - - - - - - -";
+  font-size: 10px;
+}
+.hero__subtext--font {
   text-transform: capitalize;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 .hero__btn__container {
-  display: flex;
-
-  align-items: center;
-  margin-top: 1em;
+  display: grid;
+  gap: 15px;
+  justify-content: space-between;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 140px);
 }
 .hero__btn {
   background-color: var(--dark-blue);
   color: var(--white);
+  white-space: nowrap;
 
   padding: 0.5em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 0 0.5em;
   text-transform: uppercase;
 }
 .hero__btn--green {
   background: var(--green);
 }
-
 .hero__btn--clear {
   border: 2px solid var(--white);
   color: var(--white);
   background: transparent;
 }
+.hero__btn--clear:active {
+  background: var(--white);
+  color: var(--green);
+}
+.hero__btn--padding {
+  padding: 10px 15px;
+}
+.hero__btn--font {
+  font-weight: bold;
+  font-size: 14px;
+}
 .hero__image {
   max-width: 100%;
   background: black;
   max-height: 100%;
+  filter: brightness(50%);
 }
 
 .info {
@@ -129,7 +174,6 @@ html {
 }
 
 /*card */
-
 .card {
   border: 1px dotted #ccc;
   background: #f7f8f9;
