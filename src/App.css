@@ -25,12 +25,12 @@ html {
 }
 
 @font-face {
-  font-family: 'PTSerif-Italic';
-  src: url('./assets/fonts/PTSerif-Italic.ttf');
+  font-family: "PTSerif-Italic";
+  src: url("./assets/fonts/PTSerif-Italic.ttf");
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 /* header */
@@ -42,6 +42,10 @@ html {
 .header__main__title {
   display: flex;
   align-items: center;
+}
+.header__logo {
+  max-width: 50px;
+  max-height: 50px;
 }
 .header__company__name {
   margin: 3px 0 0 0;
@@ -55,6 +59,40 @@ html {
   margin-right: 0.5em;
   font-size: 2rem;
 }
+.header__main__links {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.header__main__links__list {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.header__main__links__list li {
+  margin: 0.5em 0;
+  padding: 0.8em 1.3em;
+}
+.header__main__links__list li::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--green);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.header__main__link {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--white);
+}
 
 /*hero */
 .hero {
@@ -62,35 +100,35 @@ html {
   width: 100%;
   color: black;
 }
-.hero__caption__container {
+.carousel_caption__container {
   top: 50%;
   height: min-content;
   transform: translate(0, -50%);
 }
-.hero__toptext--font {
+.carousel__toptext--font {
   font-weight: normal;
   font-style: italic;
-  font-family: 'PTSerif-Italic';
+  font-family: "PTSerif-Italic";
   font-size: 1.2rem;
 }
-.hero__separator::before {
+.carousel__separator::before {
   content: "- - - - - - - - - -";
   font-size: 10px;
 }
-.hero__subtext--font {
+.carousel__subtext--font {
   text-transform: capitalize;
   font-size: 2rem;
   font-family: "Montserrat";
   font-weight: bold;
 }
-.hero__btn__container {
+.carousel__btn__container {
   display: grid;
   gap: 15px;
   justify-content: space-between;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 140px);
 }
-.hero__btn {
+.carousel__btn {
   background-color: var(--dark-blue);
   color: var(--white);
   white-space: nowrap;
@@ -102,30 +140,40 @@ html {
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
-.hero__btn--green {
+.carousel__btn--green {
   background: var(--green);
 }
-.hero__btn--clear {
+.carousel__btn--clear {
   border: 2px solid var(--white);
   color: var(--white);
   background: transparent;
 }
-.hero__btn--clear:active {
+.carousel__btn--clear:active {
   background: var(--white);
   color: var(--green);
 }
-.hero__btn--padding {
+.carousel__btn--padding {
   padding: 10px 15px;
 }
-.hero__btn--font {
+.carousel__btn--font {
   font-weight: bold;
   font-size: 14px;
 }
-.hero__image {
+.carousel__image {
   max-width: 100%;
   background: black;
   max-height: 100%;
   filter: brightness(50%);
+}
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 0;
+  /* 
+  will remove the arrows from the carousel
+  */
+  /* display: none; */
+
+  filter: alpha(opacity=0); /* IE support */
 }
 
 .info {
@@ -271,6 +319,11 @@ form textarea {
   font-size: 1.2rem;
   color: var(--green);
   margin: 1.2em 0;
+}
+
+.footer__contact,
+.footer__form {
+  padding: 0.5em 1em;
 }
 .footer__address,
 .footer__time {
