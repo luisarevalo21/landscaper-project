@@ -43,6 +43,10 @@ html {
   display: flex;
   align-items: center;
 }
+.header__logo {
+  max-width: 50px;
+  max-height: 50px;
+}
 .header__company__name {
   margin: 3px 0 0 0;
   text-transform: uppercase;
@@ -55,6 +59,40 @@ html {
   margin-right: 0.5em;
   font-size: 2rem;
 }
+.header__main__links {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.header__main__links__list {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.header__main__links__list li {
+  margin: 0.5em 0;
+  padding: 0.8em 1.3em;
+}
+.header__main__links__list li::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--green);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.header__main__link {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--white);
+}
 
 /*hero */
 .hero {
@@ -62,22 +100,22 @@ html {
   width: 100%;
   color: black;
 }
-.hero__caption__container {
+.carousel_caption__container {
   top: 50%;
   height: min-content;
   transform: translate(0, -50%);
 }
-.hero__toptext--font {
+.carousel__toptext--font {
   font-weight: normal;
   font-style: italic;
   font-family: "PTSerif-Italic";
   font-size: 1.2rem;
 }
-.hero__separator::before {
+.carousel__separator::before {
   content: "- - - - - - - - - -";
   font-size: 10px;
 }
-.hero__subtext--font {
+.carousel__subtext--font {
   text-transform: capitalize;
   font-size: 2rem;
   font-family: "Montserrat";
@@ -110,14 +148,14 @@ html {
   color: var(--white);
   background: transparent;
 }
-.hero__btn--clear:active {
+.carousel__btn--clear:active {
   background: var(--white);
   color: var(--green);
 }
-.hero__btn--padding {
+.carousel__btn--padding {
   padding: 10px 15px;
 }
-.hero__btn--font {
+.carousel__btn--font {
   font-weight: bold;
   font-size: 14px;
 }
@@ -281,6 +319,11 @@ form textarea {
   font-size: 1.2rem;
   color: var(--green);
   margin: 1.2em 0;
+}
+
+.footer__contact,
+.footer__form {
+  padding: 0.5em 1em;
 }
 .footer__address,
 .footer__time {

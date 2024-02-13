@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import logo from "../assets/logo.png";
+import Image from "react-bootstrap/Image";
+import { Link } from "react-router-dom";
 
+//complete menu header to show an aniamtion when popping in
+// change icons for cards
+//add card state into services to map over them
+//change the icon of the cards
 const Header = () => {
+  const [toggleMenu, setToggleMenu] = React.useState(false);
+
   return (
     <div className="header">
       <div className="header__top">
@@ -24,25 +33,37 @@ const Header = () => {
       </div>
       <div className="header__main">
         <div className="header__main__title">
-          <h2 className="header__company__name">Zengarden</h2>
-          <span className="material-symbols-outlined header__main__menu">menu</span>
-          {/* <nav className="header__main__links">
-            <ul>
+          <Image className="header__logo" src={logo} alt="logo" />
+          <span className="material-symbols-outlined header__main__menu" onClick={() => setToggleMenu(prev => !prev)}>
+            menu
+          </span>
+        </div>
+        {toggleMenu && (
+          <nav className="header__main__links">
+            <ul className="header__main__links__list">
               <li>
-                <a href="#home">Home</a>
+                <Link to="/" className="header__main__link">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <Link className="header__main__link" to="/services">
+                  Services
+                </Link>
               </li>
               <li>
-                <a href="#about">Pages</a>
+                <Link className="header__main__link" to="/about">
+                  Pages
+                </Link>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <Link to="/contact" className="header__main__link">
+                  Contact
+                </Link>
               </li>
             </ul>
-          </nav> */}
-        </div>
+          </nav>
+        )}
       </div>
     </div>
   );

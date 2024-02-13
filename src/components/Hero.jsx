@@ -25,7 +25,7 @@ const Hero = () => {
   ]);
   return (
     <div className="hero">
-      <Carousel images={images} showButtons={true} />
+      <Carousel images={images} showButtons={true} seperator={true} />
     </div>
   );
 };

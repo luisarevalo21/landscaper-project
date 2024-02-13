@@ -3,7 +3,9 @@ import Form from "./Form";
 const Footer = () => {
   return (
     <div className="footer">
-      <Form />
+      <div className="footer__form">
+        <Form />
+      </div>
 
       {/* google maps will og here */}
 

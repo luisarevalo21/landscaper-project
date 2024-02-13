@@ -29,6 +29,13 @@ const Services = () => {
       subText: "Lawn and Garden Maintenance",
     },
   ]);
+
+  const [services, setServices] = React.useState([
+    {
+      title: "Eco Friendly & Naturally Sourced Materials",
+      description: "We use 100% pesticide-free products and methods for every need.",
+    },
+  ]);
   return (
     <div className="services">
       <div className="services__photos">
@@ -43,10 +50,13 @@ const Services = () => {
         <p>See the benefits you can get by working with our experts</p>
 
         <div className="services__cards">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {services.map(service => (
+            <>
+              <Card key={service.title} title={service.title} description={service.description} />
+              <Card key={service.title} title={service.title} description={service.description} />
+              <Card key={service.title} title={service.title} description={service.description} />
+            </>
+          ))}
         </div>
       </div>
     </div>
