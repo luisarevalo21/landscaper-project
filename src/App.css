@@ -25,12 +25,12 @@ html {
 }
 
 @font-face {
-  font-family: 'PTSerif-Italic';
-  src: url('./assets/fonts/PTSerif-Italic.ttf');
+  font-family: "PTSerif-Italic";
+  src: url("./assets/fonts/PTSerif-Italic.ttf");
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 /* header */
@@ -70,7 +70,7 @@ html {
 .hero__toptext--font {
   font-weight: normal;
   font-style: italic;
-  font-family: 'PTSerif-Italic';
+  font-family: "PTSerif-Italic";
   font-size: 1.2rem;
 }
 .hero__separator::before {
@@ -83,14 +83,14 @@ html {
   font-family: "Montserrat";
   font-weight: bold;
 }
-.hero__btn__container {
+.carousel__btn__container {
   display: grid;
   gap: 15px;
   justify-content: space-between;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 140px);
 }
-.hero__btn {
+.carousel__btn {
   background-color: var(--dark-blue);
   color: var(--white);
   white-space: nowrap;
@@ -102,10 +102,10 @@ html {
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
-.hero__btn--green {
+.carousel__btn--green {
   background: var(--green);
 }
-.hero__btn--clear {
+.carousel__btn--clear {
   border: 2px solid var(--white);
   color: var(--white);
   background: transparent;
@@ -121,11 +121,21 @@ html {
   font-weight: bold;
   font-size: 14px;
 }
-.hero__image {
+.carousel__image {
   max-width: 100%;
   background: black;
   max-height: 100%;
   filter: brightness(50%);
+}
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 0;
+  /* 
+  will remove the arrows from the carousel
+  */
+  /* display: none; */
+
+  filter: alpha(opacity=0); /* IE support */
 }
 
 .info {
