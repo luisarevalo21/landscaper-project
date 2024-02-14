@@ -102,7 +102,7 @@ html {
   width: 100%;
   color: black;
 }
-.carousel_caption__container {
+.carousel__caption__container {
   top: 50%;
   height: min-content;
   transform: translate(0, -50%);
@@ -238,6 +238,7 @@ html {
   margin: 1em 0;
   text-transform: uppercase;
 }
+
 
 /*card */
 .card {
