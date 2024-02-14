@@ -19,6 +19,7 @@ body,
 html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  font-size: 16px;
 
   background-color: var(--white);
   color: var(--white);
@@ -31,6 +32,10 @@ html {
 @font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans-VariableFont.ttf");
 }
 
 /* header */
@@ -211,12 +216,11 @@ html {
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
-  align-items: center;
   background: #87ba45;
 }
 .info__para {
   color: var(--light-gray);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   line-height: 28px;
 }
 .info__btn {
@@ -238,12 +242,49 @@ html {
   margin: 1em 0;
   text-transform: uppercase;
 }
-.services .carousel__subtext--font {
+.services__photos .carousel__subtext--font {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 24px;
 }
-
+.services__details {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+.services__details__header {
+  font-family: "Montserrat";
+  color: var(--dark-gray);
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: normal;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.services__details__header--green-text {
+  color: var(--green);
+  font-weight: bold;
+}
+.services__details__subheader {
+  color: var(--light-gray);
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+.services__details__subheader::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: #87ba45;
+}
 
 /*card */
 .card {
