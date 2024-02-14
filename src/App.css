@@ -332,29 +332,30 @@ html {
 /* form */
 .form {
   background: #1a191e;
-  padding: 1em 0.5em;
   display: flex;
+  padding: 40px 30px;
   flex-direction: column;
 }
-
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1em;
   width: 100%;
+  padding-top: 10px;
+}
+form ::placeholder {
+  color: var(--light-gray);
 }
 form input {
   width: 100%;
-  margin: 0.5em 0;
+  margin: 0.7em 0;
   padding: 10px 20px;
   border-radius: 3px;
   border: 1px solid #ccc;
   font-size: 14px;
   height: 48px;
 }
-
 form textarea {
   margin: 0.5em 0;
   padding: 10px 20px;
@@ -365,11 +366,32 @@ form textarea {
 }
 .form__title {
   font-size: 1.3rem;
+  position: relative;
+  font-size: 1.8rem;
+  font-family: "Montserrat";
+  color: var(--white);
+  font-weight: normal;
+  padding-bottom: 25px;
 }
 .form__title--strong {
   font-weight: bold;
 }
-
+.form__title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  background: #87ba45;
+}
+.form__separator--dashed {
+  border-bottom: 1px dashed var(--light-gray);
+  width: 100%;
+  overflow: visible;
+  margin: 25px 0 30px 0;
+}
 .form__button {
   font-size: 1rem;
   border: none;
@@ -377,9 +399,10 @@ form textarea {
   text-transform: uppercase;
   background: var(--green);
   width: 100%;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 0.8em 1em;
-  margin: 1em 0;
+  font-family: "Open Sans";
+  font-weight: bold;
 }
 
 /* footer */
