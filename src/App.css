@@ -311,9 +311,29 @@ form textarea {
 .footer {
   color: #7b8b8e;
   text-align: left;
+  background: #242328;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.footer__logo {
+  width: 30px;
+  margin-right: 0.5em;
+}
+.footer__description {
+  margin-left: 1em;
+}
+.footer__title {
+  font-size: 1.5rem;
+  color: white;
 }
 .footer_details {
-  margin: 2em 0;
+  margin: 0.5em 0;
 }
 .footer__header {
   font-size: 1.2rem;

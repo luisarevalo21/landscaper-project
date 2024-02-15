@@ -1,14 +1,17 @@
 import React from "react";
-import Form from "./Form";
+import logo from "../assets/logo.png";
+
 const Footer = () => {
   //footer nedes to chagne to match zengarden
   return (
     <div className="footer">
-      {/* google maps will og here */}
-
+      <div className="footer__container">
+        <img src={logo} alt="logo" className="footer__logo" />
+        <h3 className="footer__title">Green Lawn Services</h3>
+      </div>
       <div className="footer__contact">
         <h2 className="footer_details">
-          Zengarden is Garden Company, provides all you need about Garden and Landscape Design.
+          Green Lawn Services, provides all you need about Garden and Landscape Design.
         </h2>
 
         <h2 className="footer__header">Office Adress: </h2>
@@ -23,7 +26,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__submenu">
-        <p> © All rights reserved {new Date().getFullYear()}, San Pablo Gardening </p>
+        <p> © All rights reserved {new Date().getFullYear()}, Green Lawn Services </p>
 
         <div className="footer__submenu__social">
           <a href="#" className="footer__submenu__links">

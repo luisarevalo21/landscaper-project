@@ -40,7 +40,7 @@ const ContactPage = () => {
       <div className="contact__item">
         <span className="material-symbols-outlined contact__item__icon">call</span>
         <p className="contact__item__text">English: (510)-426-2518</p>
-        <p>Spanish: 510-860-9831</p>
+        <p>Spanish: (510)-860-9831</p>
       </div>
       <div>google map goes ehre</div>
 
