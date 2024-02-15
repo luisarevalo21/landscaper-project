@@ -1,12 +1,9 @@
 import React from "react";
 import Form from "./Form";
 const Footer = () => {
+  //footer nedes to chagne to match zengarden
   return (
     <div className="footer">
-      <div className="footer__form">
-        <Form />
-      </div>
-
       {/* google maps will og here */}
 
       <div className="footer__contact">
