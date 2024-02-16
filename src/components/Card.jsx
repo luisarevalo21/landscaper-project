@@ -1,5 +1,16 @@
 import React from "react";
-const Card = ({ title, description }) => {
+const Card = ({ title, description, service, image }) => {
+  if (service) {
+    return (
+      <div className="card">
+        <img src={image} alt="service" />
+        <div className="card__details">
+          <h2 className="card__service__title">{title}</h2>
+          <p className="card__service__description">{description}</p>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="card">
       <div className="card__details">

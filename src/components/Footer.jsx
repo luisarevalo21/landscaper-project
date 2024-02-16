@@ -16,12 +16,13 @@ const Footer = () => {
 
         <h2 className="footer__header">Office Adress: </h2>
         <p className="footer__address">
-          2778 Rollingwood Dr, <br /> San Pablo, CA 94806
+          2778 Rollingwood Drive <br /> San Pablo, CA 94806
         </p>
         <h2 className="footer__header">Office Hours</h2>
         <p className="footer__time">
-          Monday to Friday: <br />
-          7:00AM - 5:00PM
+          Monday to Friday: 7:00am - 6:00pm
+          <br />
+          Saturday: 9:30am - 4:00pm
         </p>
       </div>
 

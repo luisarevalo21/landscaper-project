@@ -41,8 +41,10 @@ html {
 }
 .header__main__title {
   display: flex;
+  font-size: 0.5rem;
   align-items: center;
 }
+
 .header__logo {
   max-width: 50px;
   max-height: 50px;
@@ -190,7 +192,7 @@ html {
 .info__header__text {
   color: var(--green);
 }
-.info__header::after {
+/* .info__header::after {
   content: "";
   width: 80px;
   height: 3px;
@@ -200,7 +202,7 @@ html {
   left: 150px;
   align-items: center;
   background: #87ba45;
-}
+} */
 
 .info__btn {
   text-transform: uppercase;
@@ -252,6 +254,12 @@ html {
   margin-right: 0.5em;
   font-size: 1.5rem;
   color: var(--green);
+}
+
+.card__service__title {
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+  color: #525252;
 }
 
 /* form */
@@ -395,4 +403,43 @@ form textarea {
 .contact__item__text {
   text-align: center;
   margin: 0.3em 0;
+}
+
+/* service pagew */
+
+.service__page__containe {
+  padding: 1em;
+  color: var(--dark-gray);
+}
+.service__title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+
+  text-transform: uppercase;
+  color: var(--dark-gray);
+}
+
+.service__work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 1em 0;
+  color: var(--dark-gray);
+}
+.service__header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.service__after,
+.service__before {
+  border: 1px dotted #ccc;
+  background: #f7f8f9;
+  padding: 1em;
+  width: 100%;
+  margin: 1.5em auto;
+  border-radius: 5px;
 }

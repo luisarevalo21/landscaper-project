@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 import Card from "./Card";
 
 const Services = () => {
-  const [images, setImages] = React.useState([
+  const [images, setImages] = useState([
     {
       image: "https://themedemo.foundstrap.com/zengarden/img/services/service-6.jpg",
       subText: "Watering and Irrigation",
