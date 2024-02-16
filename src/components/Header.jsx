@@ -34,6 +34,7 @@ const Header = () => {
       <div className="header__main">
         <div className="header__main__title">
           <Image className="header__logo" src={logo} alt="logo" />
+          {/* <h1 >Green Lawn Services</h1> */}
           <span className="material-symbols-outlined header__main__menu" onClick={() => setToggleMenu(prev => !prev)}>
             menu
           </span>
@@ -51,11 +52,11 @@ const Header = () => {
                   Services
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link className="header__main__link" to="/about">
                   Pages
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact" className="header__main__link">
                   Contact

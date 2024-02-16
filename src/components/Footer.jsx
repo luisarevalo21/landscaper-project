@@ -1,32 +1,33 @@
 import React from "react";
-import Form from "./Form";
+import logo from "../assets/logo.png";
+
 const Footer = () => {
+  //footer nedes to chagne to match zengarden
   return (
     <div className="footer">
-      <div className="footer__form">
-        <Form />
+      <div className="footer__container">
+        <img src={logo} alt="logo" className="footer__logo" />
+        <h3 className="footer__title">Green Lawn Services</h3>
       </div>
-
-      {/* google maps will og here */}
-
       <div className="footer__contact">
         <h2 className="footer_details">
-          Zengarden is Garden Company, provides all you need about Garden and Landscape Design.
+          Green Lawn Services, provides all you need about Garden and Landscape Design.
         </h2>
 
         <h2 className="footer__header">Office Adress: </h2>
         <p className="footer__address">
-          2778 Rollingwood Dr, <br /> San Pablo, CA 94806
+          2778 Rollingwood Drive <br /> San Pablo, CA 94806
         </p>
         <h2 className="footer__header">Office Hours</h2>
         <p className="footer__time">
-          Monday to Friday: <br />
-          7:00AM - 5:00PM
+          Monday to Friday: 7:00am - 6:00pm
+          <br />
+          Saturday: 9:30am - 4:00pm
         </p>
       </div>
 
       <div className="footer__submenu">
-        <p> © All rights reserved {new Date().getFullYear()}, San Pablo Gardening </p>
+        <p> © All rights reserved {new Date().getFullYear()}, Green Lawn Services </p>
 
         <div className="footer__submenu__social">
           <a href="#" className="footer__submenu__links">
