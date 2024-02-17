@@ -44,10 +44,10 @@ const Services = () => {
       </div>
 
       <div className="services__details">
-        <h2>
-          Why <span>choose us? </span>
+        <h2 className="services__details__header">
+          Why <span className="services__details__header--green-text">choose us? </span>
         </h2>
-        <p>See the benefits you can get by working with our experts</p>
+        <p className="services__details__subheader">See the benefits you can get by working with our experts</p>
 
         <div className="services__cards">
           {services.map(service => (
