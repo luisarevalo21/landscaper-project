@@ -94,9 +94,11 @@ const ServicesPage = () => {
       />
       <hr className="service__hr" />
 
-      {serviceDetails.map((detail, index) => (
-        <Card key={index} service={true} image={detail.image} title={detail.subText} description={detail.description} />
-      ))}
+      <div className="services__cards">
+        {serviceDetails.map((detail, index) => (
+          <Card key={index} service={true} image={detail.image} title={detail.subText} description={detail.description} />
+        ))}
+      </div>
 
       <div className="service__work">
         <h2 className="service__title">Our Work</h2>

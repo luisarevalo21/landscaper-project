@@ -303,6 +303,7 @@ html {
 /*card */
 .services__cards {
   padding-top: 10px;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
 }
 .card {
   border: 1px dashed #ccc;
@@ -399,7 +400,6 @@ form textarea {
   color: var(--white);
   font-weight: normal;
   padding-bottom: 25px;
-  width: max-content
 }
 .form__title--strong {
   font-weight: bold;
@@ -671,9 +671,17 @@ form textarea {
   margin: 1.5em auto;
   border-radius: 5px;
 }
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
 .services__card__container {
+  flex: 1 1 300px;
+  margin: 20px 0;
+
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
 }
 .card__service__title {
   color: var(--green);
@@ -684,6 +692,7 @@ form textarea {
 .card__details {
   font-family: "Open Sans";
   color: var(--dark-gray);
+  align-self: flex-start;
 }
 .service__before img,
 .service__after img {
