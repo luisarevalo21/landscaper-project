@@ -351,10 +351,19 @@ html {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   padding-top: 10px;
+  max-width: 720px;
+}
+.form__inputs__grid {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px; 
+}
+.form__left__container,
+.form__right__container {
+  width: 100%;
+  flex: 1 1 300px;
 }
 form ::placeholder {
   color: var(--light-gray);
@@ -375,8 +384,8 @@ form textarea:focus {
   box-shadow: 0 0 5px var(--green);
 }
 form textarea {
-  margin: 0.7em 0;
-  padding: 10px 20px;
+  margin: 0.7em 0 0 0;
+  padding: 10px 20px 0 20px;
   width: 100%;
   font-size: 14px;
   border-radius: 3px;
@@ -390,6 +399,7 @@ form textarea {
   color: var(--white);
   font-weight: normal;
   padding-bottom: 25px;
+  width: max-content
 }
 .form__title--strong {
   font-weight: bold;
@@ -580,6 +590,8 @@ form textarea {
   background: #f8f8f8;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: center;
 }
 .contact__form form {
   padding: 20px 30px 30px 30px;
