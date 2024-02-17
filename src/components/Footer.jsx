@@ -7,25 +7,28 @@ const Footer = () => {
   //footer nedes to chagne to match zengarden
   return (
     <div className="footer">
-      <div className="footer__container">
-        <img src={logo} alt="logo" className="footer__logo" />
-        <h3 className="footer__title">Green Lawn Services</h3>
-      </div>
-      <div className="footer__contact">
-        <h2 className="footer_details">
-          Green Lawn Services, provides all you need about Garden and Landscape Design.
-        </h2>
-
-        <h2 className="footer__header">Office Address: </h2>
-        <p className="footer__address">
-          2778 Rollingwood Drive <br /> San Pablo, CA 94806
-        </p>
-        <h2 className="footer__header">Office Hours</h2>
-        <p className="footer__time">
-          Monday to Friday: 7:00am - 6:00pm
-          <br />
-          Saturday: 9:30am - 4:00pm
-        </p>
+      <div className="footer__top__menu">
+        <div className="footer__left__container">
+          <img src={logo} alt="logo" className="footer__logo" />
+          <h3 className="footer__title">Green Lawn Services</h3>
+          <h2 className="footer_details">
+            Green Lawn Services, provides all you need about Garden and Landscape Design.
+          </h2>
+        </div>
+        <div className="footer__middle__container">
+          <h2 className="footer__header">Office Address: </h2>
+          <p className="footer__address">
+            2778 Rollingwood Drive <br /> San Pablo, CA 94806
+          </p>
+        </div>
+        <div className="footer__right__container">
+          <h2 className="footer__header">Office Hours</h2>
+          <p className="footer__time">
+            Monday to Friday: 7:00am - 6:00pm
+            <br />
+            Saturday: 9:30am - 4:00pm
+          </p>
+        </div>
       </div>
 
       <div className="footer__submenu">
