@@ -207,7 +207,7 @@ html {
   font-weight: normal;
   font-family: "Montserrat";
 }
-/* .info__header::after {
+.info__header::after {
   content: "";
   width: 80px;
   height: 3px;
