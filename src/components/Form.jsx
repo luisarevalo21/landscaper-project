@@ -22,14 +22,14 @@ const Form = ({ home }) => {
     );
   } else {
     return (
-      <div className="contact-form">
+      <div className="contact__form">
         <form action="">
           <input type="text" placeholder="Full Name" />
           <input type="email" placeholder="Email Address" />
           <input type="text" placeholder="Home Address" />
           <input type="text" placeholder="Subject" />
           <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
-          <button className="form__button">Submit message</button>
+          <button className="form__button form__button--margin--top">Submit message</button>
         </form>
       </div>
     );

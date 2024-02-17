@@ -368,6 +368,12 @@ form input {
   font-size: 14px;
   height: 48px;
 }
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid var(--green);
+  box-shadow: 0 0 5px var(--green);
+}
 form textarea {
   margin: 0.7em 0;
   padding: 10px 20px;
@@ -553,23 +559,39 @@ form textarea {
   filter: invert(1) brightness(1);
 }
 
-/* contact*/
+/* contact page*/
 .contact {
   color: var(--dark-gray);
 }
 .contact__container {
-  padding: 1em;
+  padding: 2.5rem 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.contact-form {
+.contact__details {
+  display: grid;
+  gap: 15px;
+}
+.contact__details--green {
+  color: var(--green);
+}
+.contact__form {
   background: #f8f8f8;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
-  margin: 0 auto;
 }
-.contact__details {
-  padding: 1em;
+.contact__form form {
+  padding: 20px 30px 30px 30px;
 }
-
+.form__button--margin--top {
+  margin-top: 10px;
+}
+.contact__items__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .contact__item {
   display: flex;
   flex-direction: column;
@@ -579,15 +601,25 @@ form textarea {
 .contact__item__icon {
   font-size: 3.5rem;
   margin: 0.3em 0;
+  filter: contrast(70%);
 }
-.contact__item__address {
+.contact__item__title {
   font-size: 1.2rem;
   color: var(--green);
+  font-family: "Montserrat";
 }
 .contact__item__text {
   text-align: center;
   margin: 0.3em 0;
+  font-family: "Open Sans";
+  color: var(--light-gray);
+  margin: 0;
+  margin-bottom: 5px;
 }
+.form__title--dark {
+  color: var(--dark-gray);
+}
+
 
 /* service page */
 .service__page__container {
