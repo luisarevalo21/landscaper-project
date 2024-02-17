@@ -2,7 +2,7 @@ import React from "react";
 const Card = ({ title, description, service, image }) => {
   if (service) {
     return (
-      <div className="card">
+      <div className="card services__card__container">
         <img src={image} alt="service" />
         <div className="card__details">
           <h2 className="card__service__title">{title}</h2>
