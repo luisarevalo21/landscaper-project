@@ -651,11 +651,12 @@ form textarea {
 }
 .service__work {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  align-items: stretch;
   justify-content: center;
-  padding: 1em;
-  margin: 1em 0;
+  padding: 0 clamp(1rem, 5vw, 50vw);
+  margin: 0 0 20px 0;
   color: var(--dark-gray);
 }
 .service__header {
@@ -664,6 +665,8 @@ form textarea {
 }
 .service__after,
 .service__before {
+  flex: 1 1 300px;
+  /* margin: 20px 0; */
   border: 1px dotted #ccc;
   background: #f7f8f9;
   padding: 1.8em;
