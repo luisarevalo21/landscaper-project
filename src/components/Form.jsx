@@ -15,6 +15,7 @@ const Form = ({ home }) => {
           <input type="text" placeholder="Home Address" />
           <input type="text" placeholder="Subject" />
           <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+          <div className="form__separator--dashed"></div>
           <button className="form__button">Submit</button>
         </form>
       </div>
