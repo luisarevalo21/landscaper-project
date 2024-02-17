@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
 
 const Footer = () => {
   //footer nedes to chagne to match zengarden
@@ -14,7 +16,7 @@ const Footer = () => {
           Green Lawn Services, provides all you need about Garden and Landscape Design.
         </h2>
 
-        <h2 className="footer__header">Office Adress: </h2>
+        <h2 className="footer__header">Office Address: </h2>
         <p className="footer__address">
           2778 Rollingwood Drive <br /> San Pablo, CA 94806
         </p>
@@ -27,14 +29,16 @@ const Footer = () => {
       </div>
 
       <div className="footer__submenu">
-        <p> © All rights reserved {new Date().getFullYear()}, Green Lawn Services </p>
+        <p className="footer__submenu__copyright"> © All rights reserved {new Date().getFullYear()},  
+          <strong className="footer__submenu--bold"> Green Lawn Services</strong>
+        </p>
 
         <div className="footer__submenu__social">
-          <a href="#" className="footer__submenu__links">
-            Facebook
+          <a href="#" className="footer__submenu__links footer__submenu__links--facebook">
+            <img className="footer__submenu__icon" src={facebook}></img>
           </a>
-          <a href="#" className="footer__submenu__links">
-            Instagram
+          <a href="#" className="footer__submenu__links footer__submenu__links--instagram">
+          <img className="footer__submenu__icon" src={instagram}></img>
           </a>
         </div>
       </div>

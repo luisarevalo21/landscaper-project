@@ -60,6 +60,7 @@ html {
   font-weight: bolder;
   font-size: 1.5rem;
   transform: scale(1, 95%);
+  font-family: "Open Sans";
 }
 .header__main__menu {
   margin-left: auto;
@@ -426,17 +427,21 @@ form textarea {
   text-align: left;
   background: #242328;
 }
-
+.footer__form {
+  margin-bottom: 30px;
+}
 .footer__container {
   display: flex;
   align-items: center;
-
   padding: 1em;
+  padding-top: 40px;
+  gap: 5px;
+  font-family: "Open Sans";
 }
-
 .footer__logo {
-  width: 30px;
+  width: 40px;
   margin-right: 0.5em;
+  border-radius: 5px;
 }
 .footer__description {
   margin-left: 1em;
@@ -444,34 +449,77 @@ form textarea {
 .footer__title {
   font-size: 1.5rem;
   color: white;
+  margin: 3px 0 0 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+  transform: scale(1, 95%);
+  font-family: inherit;
 }
 .footer_details {
-  margin: 0.5em 0;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--light-gray);
+  font-weight: normal;
 }
 .footer__header {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--green);
   margin: 1.2em 0;
+  font-family: "Montserrat";
 }
-
 .footer__contact,
 .footer__form {
   padding: 0.5em 1em;
 }
 .footer__address,
 .footer__time {
-  font-size: 1.2rem;
+  font-family: inherit;
+  font-size: 13px;
 }
-
 .footer__submenu {
   background-color: #1a191e;
   padding: 1.4rem 0;
   width: 100%;
   text-align: center;
 }
+.footer__submenu__copyright {
+  font-size: 13px;
+  color: var(--light-gray);
+  margin-bottom: 10px;
+}
+.footer__submenu--bold {
+  font-size: 14px;
+}
+.footer__submenu__social {
+  display: flex;
+  justify-content: center;
+}
 .footer__submenu__links {
   margin: 0 0.5em;
   text-decoration: none;
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.footer__submenu__links--facebook:hover {
+  background-color: #4267B2;
+}
+.footer__submenu__links--instagram:hover {
+  background-color: 	#E1306C;
+}
+.footer__submenu__icon { 
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+  filter: invert(1) brightness(50%);
+}
+.footer__submenu__icon:hover {
+  filter: invert(1) brightness(1);
 }
 
 /* contact*/
