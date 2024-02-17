@@ -41,7 +41,6 @@ html {
 /* header */
 .header {
   background: var(--black);
-  /* min-height: 100px; */
   padding: 1.2em 1em;
 }
 .header__main__title {
@@ -348,6 +347,7 @@ html {
   display: flex;
   padding: 2.5rem clamp(1rem, 5vw, 50vw);
   flex-direction: column;
+  align-items: center;
 }
 form {
   display: flex;
@@ -400,6 +400,7 @@ form textarea {
   color: var(--white);
   font-weight: normal;
   padding-bottom: 25px;
+  max-width: 720px;
 }
 .form__title--strong {
   font-weight: bold;
@@ -411,7 +412,8 @@ form textarea {
   position: absolute;
   display: inline-block;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%);
   background: #87ba45;
 }
 .form__separator--dashed {
@@ -666,7 +668,6 @@ form textarea {
 .service__after,
 .service__before {
   flex: 1 1 300px;
-  /* margin: 20px 0; */
   border: 1px dotted #ccc;
   background: #f7f8f9;
   padding: 1.8em;
