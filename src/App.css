@@ -49,10 +49,11 @@ html {
   font-size: 0.5rem;
   align-items: center;
 }
-
 .header__logo {
   max-width: 50px;
   max-height: 50px;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 .header__company__name {
   margin: 3px 0 0 0;
@@ -71,16 +72,25 @@ html {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  margin-top: 20px;
 }
-
 .header__main__links__list {
   text-decoration: none;
   list-style: none;
   padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 1rem;
+  border-top: 1px solid var(--dark-gray);
 }
-
 .header__main__links__list li {
-  margin: 0.5em 0;
+  width: 100%;
+}
+.header__main__links__list li a {
+  width: 100%;
+  display: inline-block;
+  text-align: start;
   padding: 0.8em 1.3em;
 }
 .header__main__links__list li::after {
@@ -93,13 +103,15 @@ html {
   left: 0;
   display: block;
 }
-
 .header__main__link {
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.2rem;
   text-decoration: none;
   color: var(--white);
+  border-bottom: 1px solid var(--dark-gray);
+}
+.header__main__link:hover {
+  color: var(--green);
 }
 
 /*hero */
