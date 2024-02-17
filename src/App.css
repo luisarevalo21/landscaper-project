@@ -196,7 +196,7 @@ html {
 .info {
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   color: #525252;
   text-align: center;
   gap: 20px;
@@ -264,7 +264,7 @@ html {
 .services__details {
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   text-align: center;
 }
 .services__details__header {
@@ -345,7 +345,7 @@ html {
 .form {
   background: #1a191e;
   display: flex;
-  padding: 40px 30px;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   flex-direction: column;
 }
 form {
@@ -564,7 +564,7 @@ form textarea {
   color: var(--dark-gray);
 }
 .contact__container {
-  padding: 2.5rem 1em;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   display: flex;
   flex-direction: column;
   gap: 20px;
