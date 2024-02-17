@@ -155,9 +155,14 @@ html {
   color: var(--white);
   background: transparent;
 }
-.carousel__btn--clear:active {
+.carousel__btn--clear:active,
+.carousel__btn--clear:hover {
   background: var(--white);
   color: var(--green);
+}
+.carousel__btn--green:active,
+.carousel__btn--green:hover {
+  filter: brightness(110%)
 }
 .carousel__btn--padding {
   padding: 10px 15px;
@@ -233,6 +238,11 @@ html {
   margin: 0 auto;
   font-weight: bold;
   font-size: 14px;
+  transition: all 0.3s ease;
+}
+.info__btn:active,
+.info__btn:hover {
+  filter: brightness(110%)
 }
 
 /* services */
@@ -403,6 +413,11 @@ form textarea {
   padding: 0.8em 1em;
   font-family: "Open Sans";
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+.form__button:active,
+.form__button:hover {
+  filter: brightness(110%)
 }
 
 /* footer */
