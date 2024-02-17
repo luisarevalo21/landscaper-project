@@ -454,11 +454,11 @@ form textarea {
   justify-content: center; 
   display: flex;
   flex-wrap: wrap;
-  padding: 1em;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   padding-top: 40px;
   gap: 25px;
   font-family: "Open Sans";
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .footer__left__container {
   flex: 1 1 auto;
