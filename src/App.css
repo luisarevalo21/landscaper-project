@@ -180,6 +180,7 @@ html {
   max-height: 100%;
   filter: brightness(50%);
 }
+
 .carousel-control-next,
 .carousel-control-prev {
   opacity: 0;

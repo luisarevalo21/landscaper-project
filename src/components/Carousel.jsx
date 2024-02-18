@@ -1,13 +1,15 @@
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
-
+import LazyLoad from "react-lazyload";
 import React from "react";
 
 const CarouselComponent = ({ images, showButtons, seperator }) => {
   console.log("carousel called", images);
   const items = images.map((image, index) => (
     <Carousel.Item key={index}>
-      <Image src={image.image} className="carousel__image" />
+      <LazyLoad>
+        <Image src={image.image} className={`carousel__image `} />{" "}
+      </LazyLoad>
       <Carousel.Caption className="text-center carousel__caption__container">
         <h3 className="carousel__toptext carousel__toptext--font">{image.mainText}</h3>
         {seperator && <div className="carousel__separator"></div>}
