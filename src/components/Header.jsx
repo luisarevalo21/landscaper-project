@@ -43,12 +43,12 @@ const Header = () => {
           <nav className="header__main__links">
             <ul className="header__main__links__list">
               <li>
-                <Link to="/" className="header__main__link">
+                <Link to="/" className="header__main__link" onClick={() => setToggleMenu(false)}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="header__main__link" to="/services">
+                <Link className="header__main__link" to="/services" onClick={() => setToggleMenu(false)}>
                   Services
                 </Link>
               </li>
@@ -58,7 +58,7 @@ const Header = () => {
                 </Link>
               </li> */}
               <li>
-                <Link to="/contact" className="header__main__link">
+                <Link to="/contact" className="header__main__link" onClick={() => setToggleMenu(false)}>
                   Contact
                 </Link>
               </li>

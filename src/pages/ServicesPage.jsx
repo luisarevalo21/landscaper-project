@@ -96,10 +96,16 @@ const ServicesPage = () => {
 
       <div className="services__cards">
         {serviceDetails.map((detail, index) => (
-          <Card key={index} service={true} image={detail.image} title={detail.subText} description={detail.description} />
+          <Card
+            key={index}
+            service={true}
+            image={detail.image}
+            title={detail.subText}
+            description={detail.description}
+          />
         ))}
       </div>
-      
+
       <h2 className="service__title">Our Work</h2>
       <div className="service__work">
         <div className="service__before">
