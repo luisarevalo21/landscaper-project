@@ -5,7 +5,9 @@ import React from "react";
 const CarouselComponent = ({ images, showButtons, seperator }) => {
   const items = images.map((image, index) => (
     <Carousel.Item key={index}>
-      <Image src={image.image} className="carousel__image" />
+      <div className="carousel__image__container">
+        <Image src={image.image} className="carousel__image" />
+      </div>
       <Carousel.Caption className="text-center carousel__caption__container">
         <h3 className="carousel__toptext carousel__toptext--font">{image.mainText}</h3>
         {seperator && <div className="carousel__separator"></div>}
