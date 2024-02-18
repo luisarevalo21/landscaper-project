@@ -1,6 +1,7 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-const Card = ({ title, description, service, image }) => {
+const Card = ({ title, description, service, image, icon }) => {
+  console.log("icon", icon);
   if (service) {
     return (
       <div className="card services__card__container">
@@ -18,7 +19,7 @@ const Card = ({ title, description, service, image }) => {
     <div className="card">
       <h2 className="card__header">{title}</h2>
       <p className="card__description">{description}</p>
-      <span className="material-symbols-outlined card__icon">cycle</span>
+      <span className="material-symbols-outlined card__icon">{icon}</span>
     </div>
   );
 };

@@ -34,6 +34,18 @@ const Services = () => {
     {
       title: "Eco Friendly & Naturally Sourced Materials",
       description: "We use 100% pesticide-free products and methods for every need.",
+      icon: "cycle",
+    },
+    {
+      title: "Full Design & Planning Service",
+      description:
+        "Comprehensive design and planning assistance encompassing all aspects of the project from inception to completion.",
+      icon: "grass",
+    },
+    {
+      title: "Professional & Have Many Experience",
+      description: "Experienced professionals with a wealth of expertise and knowledge in their field.",
+      icon: "library_books",
     },
   ]);
   return (
@@ -51,11 +63,7 @@ const Services = () => {
 
         <div className="services__cards">
           {services.map(service => (
-            <>
-              <Card key={service.title} title={service.title} description={service.description} />
-              <Card key={service.title} title={service.title} description={service.description} />
-              <Card key={service.title} title={service.title} description={service.description} />
-            </>
+            <Card key={service.title} title={service.title} description={service.description} icon={service.icon} />
           ))}
         </div>
       </div>

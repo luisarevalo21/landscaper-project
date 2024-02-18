@@ -19,8 +19,8 @@ const Hero = () => {
     },
     {
       image: heroImage3,
-      subText: "Second slide label",
-      mainText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      subText: "Now you don't have to bother thinking about design",
+      mainText: "We Can Create An Environment That's Beyond Your Imagination",
     },
   ]);
   return (
