@@ -1,7 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 const Card = ({ title, description, service, image, icon }) => {
-  console.log("icon", icon);
   if (service) {
     return (
       <div className="card services__card__container">

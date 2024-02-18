@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
+import headerLogo from "../assets/header-logo.png";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 
@@ -33,8 +33,10 @@ const Header = () => {
       </div>
       <div className="header__main">
         <div className="header__main__title">
-          <Image className="header__logo" src={logo} alt="logo" />
-          {/* <h1 >Green Lawn Services</h1> */}
+          <div className="header__main__container">
+            <Image className="header__logo" src={headerLogo} alt="logo" />
+            <h1 className="header__main__header">Green Lawn Services</h1>
+          </div>
           <span className="material-symbols-outlined header__main__menu" onClick={() => setToggleMenu(prev => !prev)}>
             menu
           </span>
