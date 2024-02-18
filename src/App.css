@@ -41,7 +41,6 @@ html {
 /* header */
 .header {
   background: var(--black);
-  /* min-height: 100px; */
   padding: 1.2em 1em;
 }
 .header__main__title {
@@ -196,7 +195,7 @@ html {
 .info {
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   color: #525252;
   text-align: center;
   gap: 20px;
@@ -264,7 +263,7 @@ html {
 .services__details {
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   text-align: center;
 }
 .services__details__header {
@@ -303,6 +302,7 @@ html {
 /*card */
 .services__cards {
   padding-top: 10px;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
 }
 .card {
   border: 1px dashed #ccc;
@@ -345,16 +345,26 @@ html {
 .form {
   background: #1a191e;
   display: flex;
-  padding: 40px 30px;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   flex-direction: column;
+  align-items: center;
 }
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   padding-top: 10px;
+  max-width: 720px;
+}
+.form__inputs__grid {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px; 
+}
+.form__left__container,
+.form__right__container {
+  width: 100%;
+  flex: 1 1 300px;
 }
 form ::placeholder {
   color: var(--light-gray);
@@ -368,9 +378,15 @@ form input {
   font-size: 14px;
   height: 48px;
 }
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid var(--green);
+  box-shadow: 0 0 5px var(--green);
+}
 form textarea {
-  margin: 0.7em 0;
-  padding: 10px 20px;
+  margin: 0.7em 0 0 0;
+  padding: 10px 20px 0 20px;
   width: 100%;
   font-size: 14px;
   border-radius: 3px;
@@ -384,6 +400,7 @@ form textarea {
   color: var(--white);
   font-weight: normal;
   padding-bottom: 25px;
+  max-width: 720px;
 }
 .form__title--strong {
   font-weight: bold;
@@ -395,7 +412,8 @@ form textarea {
   position: absolute;
   display: inline-block;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%);
   background: #87ba45;
 }
 .form__separator--dashed {
@@ -438,11 +456,11 @@ form textarea {
   justify-content: center; 
   display: flex;
   flex-wrap: wrap;
-  padding: 1em;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
   padding-top: 40px;
   gap: 25px;
   font-family: "Open Sans";
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .footer__left__container {
   flex: 1 1 auto;
@@ -553,24 +571,45 @@ form textarea {
   filter: invert(1) brightness(1);
 }
 
-/* contact*/
+/* contact page*/
 .contact {
   color: var(--dark-gray);
 }
 .contact__container {
-  padding: 1em;
+  padding: 2.5rem clamp(1rem, 5vw, 50vw);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.contact-form {
+.contact__details {
+  display: grid;
+  gap: 15px;
+}
+.contact__details--green {
+  color: var(--green);
+}
+.contact__form {
   background: #f8f8f8;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-.contact__details {
-  padding: 1em;
+.contact__form form {
+  padding: 20px 30px 30px 30px;
 }
-
+.form__button--margin--top {
+  margin-top: 10px;
+}
+.contact__items__container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .contact__item {
+  flex: 1;
+  min-width: 200px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -579,15 +618,25 @@ form textarea {
 .contact__item__icon {
   font-size: 3.5rem;
   margin: 0.3em 0;
+  filter: contrast(70%);
 }
-.contact__item__address {
+.contact__item__title {
   font-size: 1.2rem;
   color: var(--green);
+  font-family: "Montserrat";
 }
 .contact__item__text {
   text-align: center;
   margin: 0.3em 0;
+  font-family: "Open Sans";
+  color: var(--light-gray);
+  margin: 0;
+  margin-bottom: 5px;
 }
+.form__title--dark {
+  color: var(--dark-gray);
+}
+
 
 /* service page */
 .service__page__container {
@@ -604,11 +653,12 @@ form textarea {
 }
 .service__work {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  align-items: stretch;
   justify-content: center;
-  padding: 1em;
-  margin: 1em 0;
+  padding: 0 clamp(1rem, 5vw, 50vw);
+  margin: 0 0 20px 0;
   color: var(--dark-gray);
 }
 .service__header {
@@ -617,6 +667,7 @@ form textarea {
 }
 .service__after,
 .service__before {
+  flex: 1 1 300px;
   border: 1px dotted #ccc;
   background: #f7f8f9;
   padding: 1.8em;
@@ -624,9 +675,17 @@ form textarea {
   margin: 1.5em auto;
   border-radius: 5px;
 }
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
 .services__card__container {
+  flex: 1 1 300px;
+  margin: 20px 0;
+
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
 }
 .card__service__title {
   color: var(--green);
@@ -637,6 +696,7 @@ form textarea {
 .card__details {
   font-family: "Open Sans";
   color: var(--dark-gray);
+  align-self: flex-start;
 }
 .service__before img,
 .service__after img {

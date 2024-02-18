@@ -94,13 +94,14 @@ const ServicesPage = () => {
       />
       <hr className="service__hr" />
 
-      {serviceDetails.map((detail, index) => (
-        <Card key={index} service={true} image={detail.image} title={detail.subText} description={detail.description} />
-      ))}
-
+      <div className="services__cards">
+        {serviceDetails.map((detail, index) => (
+          <Card key={index} service={true} image={detail.image} title={detail.subText} description={detail.description} />
+        ))}
+      </div>
+      
+      <h2 className="service__title">Our Work</h2>
       <div className="service__work">
-        <h2 className="service__title">Our Work</h2>
-
         <div className="service__before">
           <h4 className="service__header">Before</h4>
           <Carousel images={beforeImages} />
@@ -112,9 +113,8 @@ const ServicesPage = () => {
         </div>
       </div>
 
+      <h2 className="service__title">Further work</h2>
       <div className="service__work">
-        <h2 className="service__title">Further work</h2>
-
         <div className="service__before">
           <h4 className="service__header">Tools</h4>
           <Carousel images={workTools} />

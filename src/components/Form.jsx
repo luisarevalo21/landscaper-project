@@ -10,11 +10,17 @@ const Form = ({ home }) => {
           </h2>
         )}
         <form action="">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="text" placeholder="Home Address" />
-          <input type="text" placeholder="Subject" />
-          <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+          <div className="form__inputs__grid">
+            <div className="form__left__container">
+              <input type="text" placeholder="Full Name" />
+              <input type="email" placeholder="Email Address" />
+              <input type="text" placeholder="Home Address" />
+            </div>
+            <div className="form__right__container">
+              <input type="text" placeholder="Subject" />
+              <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+            </div>
+          </div>
           <div className="form__separator--dashed"></div>
           <button className="form__button">Submit</button>
         </form>
@@ -22,14 +28,21 @@ const Form = ({ home }) => {
     );
   } else {
     return (
-      <div className="contact-form">
+      <div className="contact__form">
         <form action="">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="text" placeholder="Home Address" />
-          <input type="text" placeholder="Subject" />
-          <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
-          <button className="form__button">Submit message</button>
+          <div className="form__inputs__grid">
+            <div className="form__left__container">
+              <input type="text" placeholder="Full Name" />
+              <input type="email" placeholder="Email Address" />
+              <input type="text" placeholder="Home Address" />
+            </div>
+            <div className="form__right__container">
+              <input type="text" placeholder="Subject" />
+              <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div className="form__separator--dashed"></div>
+          <button className="form__button form__button--margin--top">Submit message</button>
         </form>
       </div>
     );
