@@ -165,7 +165,7 @@ html {
 }
 .carousel__btn--green:active,
 .carousel__btn--green:hover {
-  filter: brightness(110%)
+  filter: brightness(110%);
 }
 .carousel__btn--padding {
   padding: 10px 15px;
@@ -245,7 +245,7 @@ html {
 }
 .info__btn:active,
 .info__btn:hover {
-  filter: brightness(110%)
+  filter: brightness(110%);
 }
 
 /* services */
@@ -359,7 +359,7 @@ form {
 .form__inputs__grid {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px; 
+  column-gap: 20px;
 }
 .form__left__container,
 .form__right__container {
@@ -437,7 +437,7 @@ form textarea {
 }
 .form__button:active,
 .form__button:hover {
-  filter: brightness(110%)
+  filter: brightness(110%);
 }
 
 /* footer */
@@ -453,7 +453,7 @@ form textarea {
   margin-bottom: 30px;
 }
 .footer__top__menu {
-  justify-content: center; 
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   padding: 2.5rem clamp(1rem, 5vw, 50vw);
@@ -556,12 +556,12 @@ form textarea {
   transition: all 0.3s ease;
 }
 .footer__submenu__links--facebook:hover {
-  background-color: #4267B2;
+  background-color: #4267b2;
 }
 .footer__submenu__links--instagram:hover {
-  background-color: 	#E1306C;
+  background-color: #e1306c;
 }
-.footer__submenu__icon { 
+.footer__submenu__icon {
   width: 100%;
   height: 100%;
   padding: 7px;
@@ -574,6 +574,11 @@ form textarea {
 /* contact page*/
 .contact {
   color: var(--dark-gray);
+}
+.contact__map {
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 .contact__container {
   padding: 2.5rem clamp(1rem, 5vw, 50vw);
@@ -636,7 +641,6 @@ form textarea {
 .form__title--dark {
   color: var(--dark-gray);
 }
-
 
 /* service page */
 .service__page__container {
