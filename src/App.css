@@ -151,7 +151,6 @@ html {
   background-color: var(--dark-blue);
   color: var(--white);
   white-space: nowrap;
-
   padding: 0.5em;
   border: none;
   border-radius: 5px;
@@ -736,10 +735,27 @@ form textarea {
   border-radius: 5px;
 }
 
+/* work on image zooming in */
 @media (min-width: 500px) {
   .services__cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .carousel__image__container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  .carousel__image {
+    max-width: 100%;
+    width: 100%;
+    background: black;
+    max-height: 70vh;
+    object-fit: cover;
+    /* object-fit: contain; */
+    /* object-position: center; */
+    filter: brightness(50%);
   }
 }

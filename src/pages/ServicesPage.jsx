@@ -115,7 +115,7 @@ const ServicesPage = () => {
 
         <div className="service__after">
           <h4 className="service__header">After</h4>
-          <Carousel images={beforeImages} />
+          <Carousel images={afterImages} />
         </div>
       </div>
 
