@@ -429,6 +429,7 @@ form textarea {
   font-weight: normal;
   padding-bottom: 25px;
   max-width: 720px;
+  text-align: center;
 }
 .form__title--strong {
   font-weight: bold;
@@ -617,6 +618,7 @@ form textarea {
 .contact__details {
   display: grid;
   gap: 15px;
+  justify-items: center;
 }
 .contact__details--green {
   color: var(--green);
