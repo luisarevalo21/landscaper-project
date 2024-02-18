@@ -735,3 +735,11 @@ form textarea {
 .service__after img {
   border-radius: 5px;
 }
+
+@media (min-width: 500px) {
+  .services__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
