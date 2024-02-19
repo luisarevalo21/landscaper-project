@@ -740,6 +740,7 @@ form textarea {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
   }
 
   .carousel__image__container {
