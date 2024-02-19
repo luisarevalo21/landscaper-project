@@ -78,11 +78,27 @@ html {
   cursor: pointer;
 }
 .header__main__links {
-  display: flex;
+  display: none;
   flex-direction: column;
   text-decoration: none;
   margin-top: 20px;
+  transition: all 0.3s ease;
+  animation: slide-down 1s ease-in-out;
 }
+.header__main__links--active {
+  display: flex;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .header__main__links__list {
   text-decoration: none;
   list-style: none;
@@ -111,6 +127,11 @@ html {
 }
 .header__main__link:hover {
   color: var(--green);
+  text-decoration: underline;
+}
+.header__main__link:active {
+  color: var(--green);
+  text-decoration: underline;
 }
 
 /*hero */
@@ -737,6 +758,28 @@ form textarea {
 
 /* work on image zooming in */
 @media (min-width: 500px) {
+  .header__main__menu {
+    display: none;
+  }
+  .header__main {
+    display: flex;
+    padding: 0.6em 0;
+  }
+
+  .header__main__links {
+    margin: 0 0.9em 0 auto;
+    display: flex;
+    margin-top: 0;
+  }
+  .header__main__links__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-top: none;
+  }
+  .header__main__link {
+    border-bottom: none;
+  }
   .services__cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));

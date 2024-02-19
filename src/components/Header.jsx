@@ -41,35 +41,37 @@ const Header = () => {
             menu
           </span>
         </div>
-        {toggleMenu && (
-          <nav className="header__main__links">
-            <ul className="header__main__links__list">
-              <li>
-                <Link to="/" className="header__main__link" onClick={() => setToggleMenu(false)}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link className="header__main__link" to="/services" onClick={() => setToggleMenu(false)}>
-                  Services
-                </Link>
-              </li>
-              {/* <li>
-                <Link className="header__main__link" to="/about">
-                  Pages
-                </Link>
-              </li> */}
-              <li>
-                <Link to="/contact" className="header__main__link" onClick={() => setToggleMenu(false)}>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        )}
+
+        <nav className={`header__main__links ${toggleMenu ? "header__main__links--active " : null}`}>
+          <ul className="header__main__links__list">
+            <li>
+              <Link to="/" className="header__main__link" onClick={() => setToggleMenu(false)}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="header__main__link" to="/services" onClick={() => setToggleMenu(false)}>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="header__main__link" onClick={() => setToggleMenu(false)}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   );
 };
 
 export default Header;
+
+{
+  /* <li>
+  <Link className="header__main__link" to="/about">
+    Pages
+  </Link>
+</li> */
+}
