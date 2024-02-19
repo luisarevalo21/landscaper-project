@@ -187,9 +187,6 @@ html {
   display: flex;
   align-items: center;
 }
-.carousel__image__container__auto {
-  height: auto;
-}
 .carousel__image {
   max-width: 100%;
   width: 100%;
@@ -749,6 +746,8 @@ form textarea {
     height: 300px;
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
   }
   .carousel__image {
     max-width: 100%;

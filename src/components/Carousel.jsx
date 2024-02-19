@@ -2,12 +2,15 @@ import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
 import React from "react";
 
-const CarouselComponent = ({ images, showButtons, seperator, hero }) => {
+const CarouselComponent = ({ images, showButtons, seperator, card }) => {
   const items = images.map((image, index) => (
     <Carousel.Item key={index}>
-      {/* <div className={`carousel__image__container ${hero && "carousel__image__container__auto "}`}> */}
-      <Image src={image.image} className="carousel__image" />
-      {/* </div> */}
+      { card 
+          ? (<div className='carousel__image__container'>
+              <Image src={image.image} className="carousel__image" />
+            </div>)
+          : (<Image src={image.image} className="carousel__image" />)
+      }
       <Carousel.Caption className="text-center carousel__caption__container">
         <h3 className="carousel__toptext carousel__toptext--font">{image.mainText}</h3>
         {seperator && <div className="carousel__separator"></div>}
