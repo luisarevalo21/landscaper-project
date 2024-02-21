@@ -110,12 +110,12 @@ const ServicesPage = () => {
       <div className="service__work">
         <div className="service__before">
           <h4 className="service__header">Before</h4>
-          <Carousel images={beforeImages} />
+          <Carousel images={beforeImages} card={true}/>
         </div>
 
         <div className="service__after">
           <h4 className="service__header">After</h4>
-          <Carousel images={afterImages} />
+          <Carousel images={afterImages} card={true}/>
         </div>
       </div>
 
@@ -123,12 +123,12 @@ const ServicesPage = () => {
       <div className="service__work">
         <div className="service__before">
           <h4 className="service__header">Tools</h4>
-          <Carousel images={workTools} />
+          <Carousel images={workTools} card={true}/>
         </div>
 
         <div className="service__before">
           <h4 className="service__header">Work</h4>
-          <Carousel images={workExamples} />
+          <Carousel images={workExamples} card={true}/>
         </div>
       </div>
       <iframe
