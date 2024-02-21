@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Carousel from "./Carousel";
-import heroImage1 from "../assets/hero_image_1.jpg";
-import heroImage2 from "../assets/hero_image_2.jpg";
-import heroImage3 from "../assets/hero_image_3.jpg";
-import Image from "react-bootstrap/Image";
+import heroImage1 from "../assets/compressed/hero_image_1-min.jpg";
+import heroImage2 from "../assets/compressed/hero_image_2-min.jpg";
+import heroImage3 from "../assets/compressed/hero_image_3-min.jpg";
+// import Image from "react-bootstrap/Image";
 import Card from "./Card";
 
 const Services = () => {
@@ -34,6 +34,18 @@ const Services = () => {
     {
       title: "Eco Friendly & Naturally Sourced Materials",
       description: "We use 100% pesticide-free products and methods for every need.",
+      icon: "cycle",
+    },
+    {
+      title: "Full Design & Planning Service",
+      description:
+        "Comprehensive design and planning assistance encompassing all aspects of the project from inception to completion.",
+      icon: "grass",
+    },
+    {
+      title: "Professional & Have Many Experience",
+      description: "Experienced professionals with a wealth of expertise and knowledge in their field.",
+      icon: "library_books",
     },
   ]);
   return (
@@ -51,11 +63,7 @@ const Services = () => {
 
         <div className="services__cards">
           {services.map(service => (
-            <>
-              <Card key={service.title} title={service.title} description={service.description} />
-              <Card key={service.title} title={service.title} description={service.description} />
-              <Card key={service.title} title={service.title} description={service.description} />
-            </>
+            <Card key={service.title} title={service.title} description={service.description} icon={service.icon} />
           ))}
         </div>
       </div>

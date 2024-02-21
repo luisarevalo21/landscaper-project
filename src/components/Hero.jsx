@@ -1,9 +1,9 @@
 import React from "react";
 
-import heroImage1 from "../assets/hero_image_1.jpg";
-import heroImage2 from "../assets/hero_image_2.jpg";
-import heroImage3 from "../assets/hero_image_3.jpg";
-import Image from "react-bootstrap/Image";
+import heroImage1 from "../assets/compressed/hero_image_1-min.jpg";
+import heroImage2 from "../assets/compressed/hero_image_2-min.jpg";
+import heroImage3 from "../assets/compressed/hero_image_3-min.jpg";
+
 import Carousel from "./Carousel";
 const Hero = () => {
   const [images, setImages] = React.useState([
@@ -19,13 +19,13 @@ const Hero = () => {
     },
     {
       image: heroImage3,
-      subText: "Second slide label",
-      mainText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      subText: "Now you don't have to bother thinking about design",
+      mainText: "We Can Create An Environment That's Beyond Your Imagination",
     },
   ]);
   return (
     <div className="hero">
-      <Carousel images={images} showButtons={true} seperator={true} />
+      <Carousel images={images} showButtons={true} seperator={true} hero={true} />
     </div>
   );
 };

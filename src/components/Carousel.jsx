@@ -1,13 +1,13 @@
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
-
 import React from "react";
 
-const CarouselComponent = ({ images, showButtons, seperator }) => {
-  console.log("carousel called", images);
+const CarouselComponent = ({ images, showButtons, seperator, hero }) => {
   const items = images.map((image, index) => (
     <Carousel.Item key={index}>
+      {/* <div className={`carousel__image__container ${hero && "carousel__image__container__auto "}`}> */}
       <Image src={image.image} className="carousel__image" />
+      {/* </div> */}
       <Carousel.Caption className="text-center carousel__caption__container">
         <h3 className="carousel__toptext carousel__toptext--font">{image.mainText}</h3>
         {seperator && <div className="carousel__separator"></div>}

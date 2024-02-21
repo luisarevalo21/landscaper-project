@@ -13,24 +13,24 @@ import React, { useState } from "react";
 */
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
-import servicesImage from "../assets/services.jpg";
+import servicesImage from "../assets/compressed/services-min.jpg";
 import Card from "../components/Card";
-import mulch from "../assets/mulch.jpg";
-import before1 from "../assets/before_1.jpg";
-import before2 from "../assets/before_2.jpg";
-import after1 from "../assets/after_1.jpg";
-import after2 from "../assets/after_2.jpg";
+import mulch from "../assets/compressed/mulch-min.jpg";
+import before1 from "../assets/compressed/before_1-min.jpg";
+import before2 from "../assets/compressed/before_2-min.jpg";
+import after1 from "../assets/compressed/after_1-min.jpg";
+import after2 from "../assets/compressed/after_2-min.jpg";
 
-import tools1 from "../assets/tools_1.jpg";
-import tools2 from "../assets/tools_2.jpg";
-import tools3 from "../assets/tools_3.jpg";
+import tools1 from "../assets/compressed/tools_1-min.jpg";
+import tools2 from "../assets/compressed/tools_2-min.jpg";
+import tools3 from "../assets/compressed/tools_3-min.jpg";
 
-import work1 from "../assets/work_1.jpg";
-import work2 from "../assets/work_2.jpg";
-import work3 from "../assets/work_3.jpg";
-import work4 from "../assets/work_4.jpg";
-import work5 from "../assets/work_5.jpg";
-import work6 from "../assets/work_6.jpg";
+import work1 from "../assets/compressed/work_1-min.jpg";
+import work2 from "../assets/compressed/work_2-min.jpg";
+import work3 from "../assets/compressed/work_3-min.jpg";
+import work4 from "../assets/compressed/work_4-min.jpg";
+import work5 from "../assets/compressed/work_5-min.jpg";
+import work6 from "../assets/compressed/work_6-min.jpg";
 
 const ServicesPage = () => {
   const [serviceDetails, setServiceDetails] = useState([
@@ -96,10 +96,16 @@ const ServicesPage = () => {
 
       <div className="services__cards">
         {serviceDetails.map((detail, index) => (
-          <Card key={index} service={true} image={detail.image} title={detail.subText} description={detail.description} />
+          <Card
+            key={index}
+            service={true}
+            image={detail.image}
+            title={detail.subText}
+            description={detail.description}
+          />
         ))}
       </div>
-      
+
       <h2 className="service__title">Our Work</h2>
       <div className="service__work">
         <div className="service__before">
@@ -109,7 +115,7 @@ const ServicesPage = () => {
 
         <div className="service__after">
           <h4 className="service__header">After</h4>
-          <Carousel images={beforeImages} />
+          <Carousel images={afterImages} />
         </div>
       </div>
 
@@ -125,6 +131,14 @@ const ServicesPage = () => {
           <Carousel images={workExamples} />
         </div>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201212.43130781694!2d-122.47703890803662!3d38.00176107762278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808577c47504c10d%3A0x360b82bd722d1f2d!2sGreen%20lawn%20services!5e0!3m2!1sen!2sus!4v1708222682619!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        className="contact__map"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
       <Footer />
     </div>
   );

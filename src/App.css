@@ -41,19 +41,57 @@ html {
 /* header */
 .header {
   background: var(--black);
-  padding: 1.2em 1em;
+  /* padding: 1.2em 1em; */
 }
+.header__main__container {
+  display: flex;
+  align-items: center;
+}
+
 .header__main__title {
   display: flex;
-  font-size: 0.5rem;
   align-items: center;
 }
 .header__logo {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 30px;
+  max-height: 30px;
   border-radius: 5px;
   margin-left: 10px;
 }
+
+.header__top {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.074);
+  padding: 0.6em 1em;
+}
+.header__top__details {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header__main__header {
+  font-size: 1.5rem;
+  margin-left: 0.2em;
+  margin-bottom: 0;
+  padding: 1em 0.5em;
+}
+.header__top__social {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 100px;
+  flex: 1;
+}
+.header__top__socail__icon {
+  width: 20px;
+}
+.header__top__details__icon {
+  font-size: 1.2rem;
+
+  margin: 0 0.5em;
+}
+
 .header__company__name {
   margin: 3px 0 0 0;
   text-transform: uppercase;
@@ -69,11 +107,27 @@ html {
   cursor: pointer;
 }
 .header__main__links {
-  display: flex;
+  display: none;
   flex-direction: column;
   text-decoration: none;
   margin-top: 20px;
+  transition: all 0.3s ease;
+  animation: slide-down 1s ease-in-out;
 }
+.header__main__links--active {
+  display: flex;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .header__main__links__list {
   text-decoration: none;
   list-style: none;
@@ -102,6 +156,15 @@ html {
 }
 .header__main__link:hover {
   color: var(--green);
+  text-decoration: underline;
+}
+.header__main__link:active {
+  color: var(--green);
+  text-decoration: underline;
+}
+.header__main__link--active {
+  color: var(--green) !important;
+  border-bottom: 1px solid var(--green) !important;
 }
 
 /*hero */
@@ -142,7 +205,6 @@ html {
   background-color: var(--dark-blue);
   color: var(--white);
   white-space: nowrap;
-
   padding: 0.5em;
   border: none;
   border-radius: 5px;
@@ -165,7 +227,7 @@ html {
 }
 .carousel__btn--green:active,
 .carousel__btn--green:hover {
-  filter: brightness(110%)
+  filter: brightness(110%);
 }
 .carousel__btn--padding {
   padding: 10px 15px;
@@ -174,11 +236,31 @@ html {
   font-weight: bold;
   font-size: 14px;
 }
+.carousel__image__container {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.carousel__image__container__auto {
+  height: auto;
+}
 .carousel__image {
   max-width: 100%;
+  width: 100%;
   background: black;
-  max-height: 100%;
+  min-height: 100%;
   filter: brightness(50%);
+  max-width: 100%;
+  /* width: 100%;
+  height: 100%; /* Ensure aspect ratio is maintained */
+  /* object-fit: cover; Scale the image while preserving its aspect ratio */
+  /* background: black; */
+  /* filter: brightness(70%); */
+}
+
+.carousel-item {
+  max-height: 50%;
+  width: 100%;
 }
 .carousel-control-next,
 .carousel-control-prev {
@@ -245,7 +327,7 @@ html {
 }
 .info__btn:active,
 .info__btn:hover {
-  filter: brightness(110%)
+  filter: brightness(110%);
 }
 
 /* services */
@@ -359,7 +441,7 @@ form {
 .form__inputs__grid {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px; 
+  column-gap: 20px;
 }
 .form__left__container,
 .form__right__container {
@@ -437,7 +519,7 @@ form textarea {
 }
 .form__button:active,
 .form__button:hover {
-  filter: brightness(110%)
+  filter: brightness(110%);
 }
 
 /* footer */
@@ -453,7 +535,7 @@ form textarea {
   margin-bottom: 30px;
 }
 .footer__top__menu {
-  justify-content: center; 
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   padding: 2.5rem clamp(1rem, 5vw, 50vw);
@@ -464,11 +546,10 @@ form textarea {
 }
 .footer__left__container {
   flex: 1 1 auto;
-
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content;
-  row-gap: 20px;
+  row-gap: 5px;
   column-gap: 5px;
 }
 .footer__middle__container {
@@ -495,12 +576,27 @@ form textarea {
   transform: scale(1, 95%);
   font-family: inherit;
 }
+.footer__social {
+  display: flex;
+  align-items: center;
+  grid-column: 1/3;
+}
 .footer_details {
   font-family: inherit;
   font-size: 13px;
   color: var(--light-gray);
   font-weight: normal;
   grid-column: 1/3;
+}
+.footer__social__icon {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-right: 0.3em;
+}
+.footer__license {
+  font-size: 1.1rem;
+  grid-column: 1/3;
+  margin-top: 0.3em;
 }
 .footer__header {
   font-size: 1rem;
@@ -543,7 +639,8 @@ form textarea {
   min-width: 100px;
   flex: 1;
 }
-.footer__submenu__links {
+.footer__submenu__links,
+.header__top__links {
   margin: 0 0.5em;
   text-decoration: none;
   font-size: 13px;
@@ -555,13 +652,16 @@ form textarea {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.footer__submenu__links--facebook:hover {
-  background-color: #4267B2;
+.footer__submenu__links--facebook:hover,
+.header__top__links--facebook:hover {
+  background-color: #4267b2;
 }
-.footer__submenu__links--instagram:hover {
-  background-color: 	#E1306C;
+.footer__submenu__links--instagram:hover,
+.header__top__links--instagram:hover {
+  background-color: #e1306c;
 }
-.footer__submenu__icon { 
+.footer__submenu__icon,
+.header__top__icon {
   width: 100%;
   height: 100%;
   padding: 7px;
@@ -574,6 +674,11 @@ form textarea {
 /* contact page*/
 .contact {
   color: var(--dark-gray);
+}
+.contact__map {
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 .contact__container {
   padding: 2.5rem clamp(1rem, 5vw, 50vw);
@@ -636,7 +741,6 @@ form textarea {
 .form__title--dark {
   color: var(--dark-gray);
 }
-
 
 /* service page */
 .service__page__container {
@@ -701,4 +805,57 @@ form textarea {
 .service__before img,
 .service__after img {
   border-radius: 5px;
+}
+
+/* work on image zooming in */
+@media (min-width: 500px) {
+  .header__main__menu {
+    display: none;
+  }
+  .header__main {
+    display: flex;
+    padding: 0.6em 0;
+  }
+
+  .header__main__links {
+    margin: 0 0.9em 0 auto;
+    display: flex;
+    margin-top: 0;
+  }
+  .header__main__links__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-top: none;
+  }
+  .header__main__link {
+    border-bottom: none;
+  }
+  .services__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .carousel__image__container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  .carousel__image {
+    max-width: 100%;
+    width: 100%;
+    background: black;
+    max-height: 70vh;
+    object-fit: cover;
+    /* object-fit: contain; */
+    /* object-position: center; */
+    filter: brightness(50%);
+  }
+  .footer__social {
+    grid-column: 1 / -1; /* Span all columns */
+  }
+  .header__top {
+    display: flex;
+  }
 }
