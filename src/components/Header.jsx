@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import headerLogo from "../assets/header-logo.png";
 import Image from "react-bootstrap/Image";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 //complete menu header to show an aniamtion when popping in
 // change icons for cards
@@ -12,25 +12,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="header__top">
-        {/* <p>
-          <span className="material-symbols-outlined">call</span>
-          Phone: 123-456-7800
-        </p>
-        <p>
-          <span className="material-symbols-outlined">mail</span> test@test.com
-        </p>
-        <p>
-          <span className="material-symbols-outlined">schedule</span>Mon-Fri: 7:00AM - 6:00pm
-        </p> */}
-
-        {/* <ul>
-          <li> media 1</li>
-          <li> media 2</li>
-          <li> media 3</li>
-          <li> media 4</li>
-        </ul> */}
-      </div>
+      <div className="header__top"></div>
       <div className="header__main">
         <div className="header__main__title">
           <div className="header__main__container">
@@ -45,19 +27,37 @@ const Header = () => {
         <nav className={`header__main__links ${toggleMenu ? "header__main__links--active " : null}`}>
           <ul className="header__main__links__list">
             <li>
-              <Link to="/" className="header__main__link" onClick={() => setToggleMenu(false)}>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  ["header__main__link", isActive ? "header__main__link--active" : ""].join(" ")
+                }
+                onClick={() => setToggleMenu(false)}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="header__main__link" to="/services" onClick={() => setToggleMenu(false)}>
+              <NavLink
+                className={({ isActive }) =>
+                  ["header__main__link", isActive ? "header__main__link--active" : ""].join(" ")
+                }
+                to="/services"
+                onClick={() => setToggleMenu(false)}
+              >
                 Services
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" className="header__main__link" onClick={() => setToggleMenu(false)}>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  ["header__main__link", isActive ? "header__main__link--active" : ""].join(" ")
+                }
+                onClick={() => setToggleMenu(false)}
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

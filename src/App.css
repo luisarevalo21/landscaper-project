@@ -133,6 +133,10 @@ html {
   color: var(--green);
   text-decoration: underline;
 }
+.header__main__link--active {
+  color: var(--green) !important;
+  border-bottom: 1px solid var(--green) !important;
+}
 
 /*hero */
 .hero {
