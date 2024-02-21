@@ -14,6 +14,15 @@ const Footer = () => {
           <h2 className="footer_details">
             Green Lawn Services, provides all you need about Garden and Landscape Design.
           </h2>
+          <p className="footer__social">
+            <span className="material-symbols-outlined footer__social__icon">call</span>
+            <span>English: (510)-426-2518</span>
+          </p>
+          <p className="footer__social">
+            <span className="material-symbols-outlined footer__social__icon">call</span>
+            Spanish: (510)-860-9831
+          </p>
+          <h2 className="footer__license">Lic.24-10161 </h2>
         </div>
         <div className="footer__middle__container">
           <h2 className="footer__header">Office Address: </h2>
@@ -32,7 +41,8 @@ const Footer = () => {
       </div>
 
       <div className="footer__submenu">
-        <p className="footer__submenu__copyright"> © All rights reserved {new Date().getFullYear()},  
+        <p className="footer__submenu__copyright">
+          © All rights reserved {new Date().getFullYear()},
           <strong className="footer__submenu--bold"> Green Lawn Services</strong>
         </p>
 
@@ -41,7 +51,7 @@ const Footer = () => {
             <img className="footer__submenu__icon" src={facebook}></img>
           </a>
           <a href="#" className="footer__submenu__links footer__submenu__links--instagram">
-          <img className="footer__submenu__icon" src={instagram}></img>
+            <img className="footer__submenu__icon" src={instagram}></img>
           </a>
         </div>
       </div>
