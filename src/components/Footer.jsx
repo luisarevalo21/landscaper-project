@@ -1,7 +1,6 @@
-import React from "react";
-import logo from "../assets/logo.png";
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
+import logo from "../assets/compressed/logo-min.png";
+import facebook from "../assets/compressed/facebook-min.png";
+import instagram from "../assets/compressed/instagram-min.png";
 
 const Footer = () => {
   //footer nedes to chagne to match zengarden

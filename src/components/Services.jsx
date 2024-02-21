@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Carousel from "./Carousel";
-import heroImage1 from "../assets/hero_image_1.jpg";
-import heroImage2 from "../assets/hero_image_2.jpg";
-import heroImage3 from "../assets/hero_image_3.jpg";
-import Image from "react-bootstrap/Image";
+import heroImage1 from "../assets/compressed/hero_image_1-min.jpg";
+import heroImage2 from "../assets/compressed/hero_image_2-min.jpg";
+import heroImage3 from "../assets/compressed/hero_image_3-min.jpg";
+// import Image from "react-bootstrap/Image";
 import Card from "./Card";
 
 const Services = () => {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import headerLogo from "../assets/header-logo.png";
+import headerLogo from "../assets/compressed/header-logo-min.png";
 import Image from "react-bootstrap/Image";
 import { NavLink } from "react-router-dom";
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
+import facebook from "../assets/compressed/facebook-min.png";
+import instagram from "../assets/compressed/instagram-min.png";
 
 //complete menu header to show an aniamtion when popping in
 // change icons for cards

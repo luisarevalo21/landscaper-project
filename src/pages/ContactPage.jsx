@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
-import contactImage from "../assets/contact.jpg";
+import contactImage from "../assets/compressed/contact-min.jpg";
 import Form from "../components/Form";
 const ContactPage = () => {
   const [contactDetails, setContactDetails] = React.useState([

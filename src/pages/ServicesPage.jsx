@@ -13,24 +13,24 @@ import React, { useState } from "react";
 */
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
-import servicesImage from "../assets/services.jpg";
+import servicesImage from "../assets/compressed/services-min.jpg";
 import Card from "../components/Card";
-import mulch from "../assets/mulch.jpg";
-import before1 from "../assets/before_1.jpg";
-import before2 from "../assets/before_2.jpg";
-import after1 from "../assets/after_1.jpg";
-import after2 from "../assets/after_2.jpg";
+import mulch from "../assets/compressed/mulch-min.jpg";
+import before1 from "../assets/compressed/before_1-min.jpg";
+import before2 from "../assets/compressed/before_2-min.jpg";
+import after1 from "../assets/compressed/after_1-min.jpg";
+import after2 from "../assets/compressed/after_2-min.jpg";
 
-import tools1 from "../assets/tools_1.jpg";
-import tools2 from "../assets/tools_2.jpg";
-import tools3 from "../assets/tools_3.jpg";
+import tools1 from "../assets/compressed/tools_1-min.jpg";
+import tools2 from "../assets/compressed/tools_2-min.jpg";
+import tools3 from "../assets/compressed/tools_3-min.jpg";
 
-import work1 from "../assets/work_1.jpg";
-import work2 from "../assets/work_2.jpg";
-import work3 from "../assets/work_3.jpg";
-import work4 from "../assets/work_4.jpg";
-import work5 from "../assets/work_5.jpg";
-import work6 from "../assets/work_6.jpg";
+import work1 from "../assets/compressed/work_1-min.jpg";
+import work2 from "../assets/compressed/work_2-min.jpg";
+import work3 from "../assets/compressed/work_3-min.jpg";
+import work4 from "../assets/compressed/work_4-min.jpg";
+import work5 from "../assets/compressed/work_5-min.jpg";
+import work6 from "../assets/compressed/work_6-min.jpg";
 
 const ServicesPage = () => {
   const [serviceDetails, setServiceDetails] = useState([
