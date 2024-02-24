@@ -1,6 +1,7 @@
 import logo from "../assets/compressed/logo-min.png";
 import facebook from "../assets/compressed/facebook-min.png";
 import instagram from "../assets/compressed/instagram-min.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   //footer nedes to chagne to match zengarden
@@ -46,12 +47,20 @@ const Footer = () => {
         </p>
 
         <div className="footer__submenu__social">
-          <a href="#" className="footer__submenu__links footer__submenu__links--facebook">
+          <NavLink
+            className="footer__submenu__links footer__submenu__links--facebook"
+            target={"_blank"}
+            to="https://www.facebook.com/people/Green-Lawn-Services/100069810025003"
+          >
             <img className="footer__submenu__icon" src={facebook}></img>
-          </a>
-          <a href="#" className="footer__submenu__links footer__submenu__links--instagram">
+          </NavLink>
+          <NavLink
+            target={"_blank"}
+            to="https://www.instagram.com/green_lawn_services"
+            className="footer__submenu__links footer__submenu__links--instagram"
+          >
             <img className="footer__submenu__icon" src={instagram}></img>
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
