@@ -542,6 +542,17 @@ form textarea {
   font-family: "Open Sans";
   margin-bottom: 20px;
 }
+.footer__sub__inner {
+  display: flex;
+  align-items: center;
+}
+.footer__sub {
+  display: flex;
+  flex-direction: column;
+}
+.credit {
+  font-size: 1.2rem;
+}
 .footer__left__container {
   flex: 1 1 auto;
   display: grid;
@@ -614,11 +625,20 @@ form textarea {
   width: 100%;
   text-align: center;
 
+  justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+
   justify-content: center;
+  flex-direction: column;
+
   gap: 10px;
+}
+
+.footer__sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer__submenu__copyright {
   font-size: 13px;
@@ -669,9 +689,27 @@ form textarea {
   filter: invert(1) brightness(1);
 }
 
+.credit {
+  display: flex;
+  font-size: 0.6rem;
+}
+.credit p {
+  margin: 0;
+}
+
+.credit__link {
+  color: var(--white);
+  text-decoration: none;
+
+  margin-left: 5px;
+}
+.credit__list {
+  display: flex;
+}
 /* contact page*/
 .contact {
   color: var(--dark-gray);
+  margin: 0;
 }
 .contact__map {
   height: 400px;
@@ -859,5 +897,20 @@ form textarea {
   }
   .header__top {
     display: flex;
+  }
+  .credit {
+    font-size: 0.8rem;
+  }
+
+  .footer__sub {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+  }
+  .footer__sub__inner {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
   }
 }
