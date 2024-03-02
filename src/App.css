@@ -685,6 +685,10 @@ form textarea {
   padding: 7px;
   filter: invert(1) brightness(50%);
 }
+
+.yelp {
+  font-size: 2.3rem !important;
+}
 .footer__submenu__icon:hover {
   filter: invert(1) brightness(1);
 }
