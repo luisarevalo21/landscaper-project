@@ -24,12 +24,7 @@ const Footer = () => {
           </p>
           <h2 className="footer__license">Lic.23-10161 </h2>
         </div>
-        <div className="footer__middle__container">
-          <h2 className="footer__header">Office Address: </h2>
-          <p className="footer__address">
-            2778 Rollingwood Drive <br /> San Pablo, CA 94806
-          </p>
-        </div>
+
         <div className="footer__right__container">
           <h2 className="footer__header">Office Hours</h2>
           <p className="footer__time">
