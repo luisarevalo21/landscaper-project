@@ -4,6 +4,7 @@ import Image from "react-bootstrap/Image";
 import { NavLink } from "react-router-dom";
 import facebook from "../assets/compressed/facebook-min.png";
 import instagram from "../assets/compressed/instagram-min.png";
+import yelp from "../assets/original/yelp-logo.png";
 
 //complete menu header to show an aniamtion when popping in
 // change icons for cards
@@ -36,6 +37,13 @@ const Header = () => {
             className="header__top__links header__top__links--instagram"
           >
             <img className="header__top__icon" src={instagram}></img>
+          </NavLink>
+          <NavLink
+            target={"_blank"}
+            to="https://www.yelp.com/biz/green-lawn-services-san-pablo-2?osq=green+lawn+services&override_cta=Request+a+Quote"
+            className="header__top__links header__top__links--instagram"
+          >
+            <img className="header__top__icon yelp" src={yelp}></img>
           </NavLink>
         </div>
       </div>
