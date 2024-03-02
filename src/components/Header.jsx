@@ -23,12 +23,20 @@ const Header = () => {
           Sat: 9:30am - 4:00pm
         </div>
         <div className="header__top__social">
-          <a href="#" className="header__top__links header__top__links--facebook">
+          <NavLink
+            className="header__top__links header__top__links--facebook"
+            target={"_blank"}
+            to="https://www.facebook.com/people/Green-Lawn-Services/100069810025003"
+          >
             <img className="header__top__icon" src={facebook}></img>
-          </a>
-          <a href="#" className="header__top__links header__top__links--instagram">
+          </NavLink>
+          <NavLink
+            target={"_blank"}
+            to="https://www.instagram.com/green_lawn_services"
+            className="header__top__links header__top__links--instagram"
+          >
             <img className="header__top__icon" src={instagram}></img>
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className="header__main">

@@ -9,7 +9,7 @@ const Info = () => {
         </h2>
       </div>
 
-      <h4 className="info__subheader">Zengarden have Experience In All Aspects of Garden Maintenance</h4>
+      <h4 className="info__subheader">Green Lawn Services have Experience In All Aspects of Garden Maintenance</h4>
       <p className="info__para">
         We have a lot of experience in garden services and landscape design, We offer professional services from
         planting, maintenance and design of your garden. We also provide regular garden maintenance, decoration and

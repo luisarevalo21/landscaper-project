@@ -17,10 +17,6 @@ const Services = () => {
       subText: "Garden Clearance",
     },
     {
-      image: "https://themedemo.foundstrap.com/zengarden/img/services/service-5.jpg",
-      subText: "Stone hardscaping",
-    },
-    {
       image: "https://themedemo.foundstrap.com/zengarden/img/services/service-2.jpg",
       subText: "Decoration and landscaping",
     },

@@ -16,9 +16,9 @@ const ContactPage = () => {
             Get in touch <strong className="contact__details--green">With us</strong>
           </h2>
           <p className="info__para">
-            If you have any question about Zengarden or how we can help to maintenance your garden, please contact us
-            directly by selecting from one of the below categories that is the most relevant to your inquiry and fill
-            our short feedback form.
+            If you have any question about Green Lawn Services or how we can help to maintenance your garden, please
+            contact us directly by selecting from one of the below categories that is the most relevant to your inquiry
+            and fill our short feedback form.
           </p>
         </div>
         <div className="contact__form__container">

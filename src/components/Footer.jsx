@@ -1,6 +1,7 @@
 import logo from "../assets/compressed/logo-min.png";
 import facebook from "../assets/compressed/facebook-min.png";
 import instagram from "../assets/compressed/instagram-min.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   //footer nedes to chagne to match zengarden
@@ -40,19 +41,49 @@ const Footer = () => {
       </div>
 
       <div className="footer__submenu">
-        <p className="footer__submenu__copyright">
-          © All rights reserved {new Date().getFullYear()},
-          <strong className="footer__submenu--bold"> Green Lawn Services</strong>
-        </p>
+        <div className="footer__sub">
+          <div className="footer__sub__inner">
+            <p className="footer__submenu__copyright">
+              © All rights reserved {new Date().getFullYear()},
+              <strong className="footer__submenu--bold"> Green Lawn Services</strong>
+            </p>
+            <div className="footer__submenu__social">
+              <NavLink
+                className="footer__submenu__links footer__submenu__links--facebook"
+                target={"_blank"}
+                to="https://www.facebook.com/people/Green-Lawn-Services/100069810025003"
+              >
+                <img className="footer__submenu__icon" src={facebook}></img>
+              </NavLink>
+              <NavLink
+                target={"_blank"}
+                to="https://www.instagram.com/green_lawn_services"
+                className="footer__submenu__links footer__submenu__links--instagram"
+              >
+                <img className="footer__submenu__icon" src={instagram}></img>
+              </NavLink>
+            </div>
+          </div>
 
-        <div className="footer__submenu__social">
-          <a href="#" className="footer__submenu__links footer__submenu__links--facebook">
-            <img className="footer__submenu__icon" src={facebook}></img>
-          </a>
-          <a href="#" className="footer__submenu__links footer__submenu__links--instagram">
-            <img className="footer__submenu__icon" src={instagram}></img>
-          </a>
+          <div className="credit">
+            <p>Desgined and developed by: </p>
+            <NavLink className="credit__link" target={"_blank"} to="https://github.com/luisarevalo21">
+              Luis Arevalo &
+            </NavLink>
+            <NavLink className="credit__link" target={"_blank"} to="https://github.com/strallia">
+              Strallia Chao
+            </NavLink>
+          </div>
         </div>
+        {/* <div className="credit">
+          <p>Desgined and developed by: </p>
+          <NavLink className="credit__link" target={"_blank"} to="https://github.com/luisarevalo21">
+            Luis Arevalo &
+          </NavLink>
+          <NavLink className="credit__link" target={"_blank"} to="https://github.com/strallia">
+            Strallia Chao
+          </NavLink>
+        </div> */}
       </div>
     </div>
   );
