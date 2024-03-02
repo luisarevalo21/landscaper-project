@@ -22,7 +22,7 @@ const Footer = () => {
             <span className="material-symbols-outlined footer__social__icon">call</span>
             Spanish: (510)-860-9831
           </p>
-          <h2 className="footer__license">Lic.24-10161 </h2>
+          <h2 className="footer__license">Lic.23-10161 </h2>
         </div>
         <div className="footer__middle__container">
           <h2 className="footer__header">Office Address: </h2>
