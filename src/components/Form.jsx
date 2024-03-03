@@ -3,13 +3,6 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-input-2";
 
-//email //
-//https://www.youtube.com/watch?v=Lz8yx-zn-O4&ab_channel=TheIvoryCoder
-//https://www.emailjs.com/
-//service id :service_b2dd41m
-//tempalte id template_5nd7jw8
-//public key yc3W_UBJFUCM_Elp7
-
 const Form = ({ home }) => {
   const formRef = useRef();
   const [form, setForm] = useState({
