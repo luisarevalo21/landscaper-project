@@ -747,6 +747,14 @@ form textarea {
 .form__button--margin--top {
   margin-top: 10px;
 }
+.form__success {
+  font-size: 1.9rem;
+  text-align: center;
+  font-weight: bold;
+  width: 300px;
+  margin: 0.5em auto;
+  background: var(--green);
+}
 .contact__items__container {
   display: flex;
   gap: 10px;

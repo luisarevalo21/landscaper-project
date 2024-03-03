@@ -1,5 +1,6 @@
 {
   "name": "landscaper-project",
+  "homepage": "https:://www.greenlawn-services.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +11,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.2.0",
     "bootstrap": "^5.3.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",
     "react-lazyload": "github:twobin/react-lazyload",
+    "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.22.0"
   },
   "devDependencies": {
