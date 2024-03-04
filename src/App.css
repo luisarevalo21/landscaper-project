@@ -7,6 +7,7 @@
   --green: #87ba45;
   --white: #ffffff;
   --black: #242328;
+  --yelp-red: #ff1a1a;
 }
 
 * {
@@ -662,8 +663,8 @@ form textarea {
   margin: 0 0.5em;
   text-decoration: none;
   font-size: 13px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -677,6 +678,19 @@ form textarea {
 .footer__submenu__links--instagram:hover,
 .header__top__links--instagram:hover {
   background-color: #e1306c;
+}
+.footer__submenu__links--yelp:hover,
+.header__top__links--yelp:hover {
+  background-color: var(--yelp-red);
+}
+
+.footer__submenu__links {
+  width: 30px;
+  height: 30px;
+}
+.footer__sub__inner {
+  flex-direction: column;
+  margin: 0.8em 0;
 }
 .footer__submenu__icon,
 .header__top__icon {

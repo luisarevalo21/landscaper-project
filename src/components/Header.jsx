@@ -41,9 +41,9 @@ const Header = () => {
           <NavLink
             target={"_blank"}
             to="https://www.yelp.com/biz/green-lawn-services-san-pablo-2?osq=green+lawn+services&override_cta=Request+a+Quote"
-            className="header__top__links header__top__links--instagram"
+            className="header__top__links yelp header__top__links--yelp"
           >
-            <img className="header__top__icon yelp" src={yelp}></img>
+            <img className="header__top__icon" src={yelp}></img>
           </NavLink>
         </div>
       </div>
