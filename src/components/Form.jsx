@@ -29,11 +29,9 @@ const Form = ({ home }) => {
     // Perform form validation
     if (form.name === "" || form.email === "" || form.address === "" || form.subject === "" || form.message === "") {
       // Display an error message or handle the validation error
-      console.log("Please fill out all fields");
       return;
     }
 
-    console.log("e", e.target);
     setForm({
       name: "",
       email: "",
@@ -43,6 +41,7 @@ const Form = ({ home }) => {
       message: "",
     });
     setFormSubmitted(true);
+    // emailjs.sendForm("service_pxeqtaf", "template_fgdovzl", formRef.current, "Pg6oB0WaQxHhjTong").then(() => {
     emailjs.sendForm("service_b2dd41m", "template_xb3875r", formRef.current, "yc3W_UBJFUCM_EIp7").then(() => {
       setFormSubmitted(true);
     });
@@ -50,7 +49,7 @@ const Form = ({ home }) => {
 
   if (home) {
     return (
-      <div className="form">
+      <div className="form" name="contact">
         {home && (
           <>
             <h2 className="form__title">

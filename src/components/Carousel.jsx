@@ -1,16 +1,18 @@
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
 import React from "react";
+import { Link } from "react-scroll";
 
 const CarouselComponent = ({ images, showButtons, seperator, card }) => {
   const items = images.map((image, index) => (
     <Carousel.Item key={index}>
-      { card 
-          ? (<div className='carousel__image__container'>
-              <Image src={image.image} className="carousel__image" />
-            </div>)
-          : (<Image src={image.image} className="carousel__image" />)
-      }
+      {card ? (
+        <div className="carousel__image__container">
+          <Image src={image.image} className="carousel__image" />
+        </div>
+      ) : (
+        <Image src={image.image} className="carousel__image" />
+      )}
       <Carousel.Caption className="text-center carousel__caption__container">
         <h3 className="carousel__toptext carousel__toptext--font">{image.mainText}</h3>
         {seperator && <div className="carousel__separator"></div>}
@@ -18,7 +20,9 @@ const CarouselComponent = ({ images, showButtons, seperator, card }) => {
         {showButtons && (
           <div className="carousel__btn__container">
             <button className="carousel__btn carousel__btn--green carousel__btn--font carousel__btn--padding">
-              Get in Touch
+              <Link to="contact" spy={true} smooth={true} duration={300}>
+                Get in Touch
+              </Link>
             </button>
             <button className="carousel__btn carousel__btn--clear carousel__btn--font carousel__btn--padding">
               Learn More
