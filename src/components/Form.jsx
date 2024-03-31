@@ -41,7 +41,6 @@ const Form = ({ home }) => {
       message: "",
     });
     setFormSubmitted(true);
-    // emailjs.sendForm("service_pxeqtaf", "template_fgdovzl", formRef.current, "Pg6oB0WaQxHhjTong").then(() => {
     emailjs.sendForm("service_b2dd41m", "template_xb3875r", formRef.current, "yc3W_UBJFUCM_EIp7").then(() => {
       setFormSubmitted(true);
     });
