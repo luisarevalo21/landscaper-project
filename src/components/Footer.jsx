@@ -1,7 +1,7 @@
 import logo from "../assets/compressed/logo-min.png";
 import facebook from "../assets/compressed/facebook-min.png";
 import instagram from "../assets/compressed/instagram-min.png";
-import yelp from "../assets/original/yelp-logo.png";
+import yelp from "../assets/original/yelp-star.png";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
