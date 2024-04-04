@@ -4,7 +4,7 @@ import Image from "react-bootstrap/Image";
 import { NavLink } from "react-router-dom";
 import facebook from "../assets/compressed/facebook-min.png";
 import instagram from "../assets/compressed/instagram-min.png";
-import yelp from "../assets/original/yelp-logo.png";
+import yelp from "../assets/original/yelp-star.png";
 
 //complete menu header to show an aniamtion when popping in
 // change icons for cards
